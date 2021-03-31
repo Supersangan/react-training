@@ -2,12 +2,13 @@ const path = require('path');
 const nodeExternals = require('webpack-node-externals');
 
 const NODE_ENV = process.env.NODE_ENV;
+const GLOBAL_CSS_REGEXP = /\.dlobal\.less$/;
 
 module.exports = {
   target: 'node',
   mode: NODE_ENV ? NODE_ENV : 'development',
   resolve: {
-    extensions: ['.js', '.jsx', '.json']
+    extensions: ['.js', '.jsx', '.json', '.ts', '.tsx']
   },
   entry: path.resolve(__dirname, '../src/server/server.js'),
   output: {
@@ -29,12 +30,27 @@ module.exports = {
             options: {
               modules: {
                 mode: 'local',
-                localIdentName: '[name]__[local]--[hash:base64:5]',
-                exportOnlyLocals: true,
-              },
+                localIdentName: '[name]__[local]--[hash:base64:5]',exportOnlyLocals: true,
+              }
             }
           },
-          'less-loader',
+          'less-loader'
+        ],
+        exclude: GLOBAL_CSS_REGEXP
+      },
+      {
+        test: GLOBAL_CSS_REGEXP,
+        use: [
+          {
+            loader: 'css-loader',
+            options: {
+              modules: {
+                mode: 'local',
+                localIdentName: '[name]__[local]--[hash:base64:5]',exportOnlyLocals: true,
+              }
+            }
+          },
+          'less-loader'
         ],
       }
     ]
