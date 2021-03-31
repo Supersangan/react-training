@@ -560,7 +560,11 @@ eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
+<<<<<<< HEAD
 /******/ 		__webpack_require__.h = () => ("564bd2123fbf207b997b")
+=======
+/******/ 		__webpack_require__.h = () => ("05bfd661a9f664a82419")
+>>>>>>> b22a3a0 (header created, content created)
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
