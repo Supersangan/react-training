@@ -1,11 +1,17 @@
 import React from 'react';
+import './main.global.less'
 import { hot } from 'react-hot-loader/root';
+import { Header } from './shared/Header';
+import { Content } from './shared/Content';
 import { Layout } from './shared/Layout';
 
 function AppComponent() {
   return (
     <Layout>
-      content
+      <Header />
+      <Content>
+        content
+      </Content>
     </Layout>
   );
 }
