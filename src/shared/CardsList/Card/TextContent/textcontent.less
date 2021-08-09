@@ -1,0 +1,104 @@
+.textContent {
+  padding: 22px 20px 16px;
+}
+
+@media (min-width: 1024px) {
+  .textContent {
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    flex: 0 0 540px;
+    margin-right: auto;
+    padding: 0;
+    min-width: 0;
+  }
+}
+
+@media (min-width: 1540px) {
+  .textContent {
+    flex-basis: 672px;
+  }
+}
+
+.metaData {
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+  font-size: 10px;
+}
+
+@media (min-width: 1024px) {
+  .metaData {
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+}
+
+.userLink {
+  display: flex;
+  align-items: center;
+  margin-right: 6px;
+}
+
+@media (min-width: 1024px) {
+  .userLink {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1540px) {
+  .userLink {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.avatar {
+  margin-right: 7px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}
+
+.username {
+  color: var(--orange);
+}
+
+@media (min-width: 1540px) {
+  .username:hover {
+    border-bottom: 1px solid var(--orange);
+  }
+}
+
+.title {
+  margin: 0;
+  overflow: hidden;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media (min-width: 1024px) {
+  .title {
+    margin-bottom: 10px;
+    font-size: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (min-width: 1540px) {
+  .card:hover .title,
+  .card:focus-within .title {
+    color: var(--orange);
+  }
+}
+
+.postLink::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}

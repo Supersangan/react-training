@@ -1,0 +1,35 @@
+.menu {
+  position: absolute;
+  top: 17px;
+  right: 15px;
+}
+
+@media (min-width: 1024px) {
+  .menu {
+    position: relative;
+    top: unset;
+    right: unset;
+    margin-right: 24px;
+  }
+}
+
+.menuButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 31px;
+  height: 31px;
+  transform: rotate(90deg);
+}
+
+@media (min-width: 1024px) {
+  .menuButton {
+    transform: unset;
+  }
+}
+
+.menuButton:hover,
+.menuButton:active {
+  background: rgba(51, 51, 51, 0.1);
+}
