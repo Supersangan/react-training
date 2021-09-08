@@ -1,0 +1,5 @@
+export function mergeClassNames<S extends string> (str: S) {
+  return <K extends string>(res: K) => ({
+    str
+  });
+}
