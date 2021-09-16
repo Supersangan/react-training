@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './actions.less';
+import styles from './actions.css';
 import { SaveButton } from './SaveButton';
 import { ShareButton } from './ShareButton';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './createdat.less';
+import styles from './createdat.css';
 
 export function CreatedAt() {
   return (

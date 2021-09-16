@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './dropdown.less';
+import styles from './dropdown.css';
 
 interface IDropdownProps {
   button: React.ReactNode;

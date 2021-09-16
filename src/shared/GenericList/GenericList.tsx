@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from './genericlist.less';
+import styles from './genericlist.css';
 
 interface IItem {
   id: string;
-  text: string;
+  text: React.ReactNode;
   onClick?: (id: string) => void;
   itemWrapperClassName?: string;
   itemClassName?: string;

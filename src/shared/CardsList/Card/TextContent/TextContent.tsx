@@ -1,6 +1,6 @@
 import React from 'react';
 import { CreatedAt } from './CreatedAt';
-import styles from './textcontent.less';
+import styles from './textcontent.css';
 
 export function TextContent() {
   return (

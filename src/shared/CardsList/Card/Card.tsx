@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './card.less';
+import styles from './card.css';
 import { Controls } from './Controls';
 import { Menu } from './Menu';
 import { Preview } from './Preview';

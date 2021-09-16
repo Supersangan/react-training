@@ -2,7 +2,7 @@ const path = require('path');
 const nodeExternals = require('webpack-node-externals');
 
 const NODE_ENV = process.env.NODE_ENV;
-const GLOBAL_CSS_REGEXP = /\.dlobal\.less$/;
+const GLOBAL_CSS_REGEXP = /\.global\.css$/;
 
 module.exports = {
   target: 'node',
@@ -23,18 +23,17 @@ module.exports = {
         use: ['ts-loader']
       },
       {
-        test: /\.less$/,
+        test: /\.css$/,
         use: [
           {
             loader: 'css-loader',
             options: {
               modules: {
                 mode: 'local',
-                localIdentName: '[name]__[local]--[hash:base64:5]',exportOnlyLocals: true,
+                localIdentName: '[name]__[local]--[hash:base64:5]', exportOnlyLocals: true,
               }
             }
-          },
-          'less-loader'
+          }
         ],
         exclude: GLOBAL_CSS_REGEXP
       },
@@ -46,11 +45,10 @@ module.exports = {
             options: {
               modules: {
                 mode: 'local',
-                localIdentName: '[name]__[local]--[hash:base64:5]',exportOnlyLocals: true,
+                localIdentName: '[name]__[local]--[hash:base64:5]', exportOnlyLocals: true,
               }
             }
-          },
-          'less-loader'
+          }
         ],
       }
     ]

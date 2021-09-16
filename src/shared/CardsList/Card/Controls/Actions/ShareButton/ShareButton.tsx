@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './sharebutton.less';
+import styles from './sharebutton.css';
 
 export function ShareButton() {
   return (

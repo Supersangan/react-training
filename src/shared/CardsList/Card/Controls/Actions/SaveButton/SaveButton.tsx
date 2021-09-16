@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './savebutton.less';
+import styles from './savebutton.css';
 
 export function SaveButton() {
   return (

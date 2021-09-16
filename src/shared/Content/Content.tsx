@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './content.less';
+import styles from './content.css';
 
 interface IContentProps {
   children?: React.ReactNode;

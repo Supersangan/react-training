@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './karmacounter.less';
+import styles from './karmacounter.css';
 
 export function KarmaCounter() {
   return (
