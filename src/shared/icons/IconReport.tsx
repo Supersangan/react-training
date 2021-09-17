@@ -5,20 +5,21 @@ interface IIconProps {
   height?: string;
 }
 
-export function MenuIcon(props: IIconProps) {
+export function IconReport(props: IIconProps) {
   const { width = '100%', height = width} = props;
 
   return (
     <svg
       width={width}
       height={height}
-      viewBox="0 0 5 20"
+      viewBox="0 0 16 14"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <circle cx="2.5" cy="2.5" r="2.5" fill="#D9D9D9" />
-      <circle cx="2.5" cy="10" r="2.5" fill="#D9D9D9" />
-      <circle cx="2.5" cy="17.5" r="2.5" fill="#D9D9D9" />
+      <path
+        d="M0 14H16L8 0L0 14ZM8.72727 11.7895H7.27273V10.3158H8.72727V11.7895ZM8.72727 8.8421H7.27273V5.89474H8.72727V8.8421Z"
+        fill="#999999"
+      />
     </svg>
   );
 }

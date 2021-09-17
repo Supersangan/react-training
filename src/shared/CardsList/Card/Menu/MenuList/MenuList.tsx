@@ -1,16 +1,7 @@
 import React from 'react';
-import { generateId } from '../../../../../utils/react/generateRandomIndex';
 import { Break } from '../../../../Break';
 import { Text } from '../../../../Text';
-import { GenericList } from '../../../../GenericList';
 import { EIcons, Icon } from '../../../../Icon';
-import {
-  CommentsIcon,
-  HideIcon,
-  ReportIcon,
-  SaveIcon,
-  ShareIcon,
-} from '../../../../icons';
 import styles from './menulist.css';
 
 export function MenuList() {

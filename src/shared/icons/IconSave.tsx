@@ -5,7 +5,7 @@ interface IIconProps {
   height?: string;
 }
 
-export function SaveIcon(props: IIconProps) {
+export function IconSave(props: IIconProps) {
   const { width = '100%', height = width} = props;
 
   return (

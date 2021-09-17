@@ -5,7 +5,7 @@ interface IIconProps {
   height?: string;
 }
 
-export function HideIcon(props: IIconProps) {
+export function IconHide(props: IIconProps) {
   const { width = '100%', height = width} = props;
 
   return (

@@ -13,6 +13,14 @@ app.get('/', (req, res) => {
   );
 });
 
+app.get('/auth', (req, res) => {
+  // req.query.code;
+  
+  res.send(
+    indexTemplate(ReactDom.renderToString(App())),
+  );
+});
+
 app.listen(3000, (err) => {
   if (err) {
     console.log('Server starting faild: ', err);

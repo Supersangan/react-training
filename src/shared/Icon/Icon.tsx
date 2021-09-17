@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './icon.css';
-import { CommentsIcon, HideIcon, MenuIcon, ReportIcon, SaveIcon, ShareIcon } from '../icons';
+import { IconComments, IconHide, IconMenu, IconReport, IconSave, IconShare } from '../icons';
 import classNames from 'classnames';
 
 export enum EIcons {
@@ -14,12 +14,12 @@ export enum EIcons {
 
 
 const components = {
-  comments: CommentsIcon,    
-  hide: HideIcon,  
-  menu: MenuIcon,  
-  report: ReportIcon,  
-  save: SaveIcon,  
-  share: ShareIcon,    
+  comments: IconComments,    
+  hide: IconHide,  
+  menu: IconMenu,  
+  report: IconReport,  
+  save: IconSave,  
+  share: IconShare,    
 };
 
 type TSizes = 28 | 20 | 16 | 14 | 12 | 10;

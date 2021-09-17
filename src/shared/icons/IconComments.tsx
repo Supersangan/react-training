@@ -5,7 +5,7 @@ interface IIconProps {
   height?: string;
 }
 
-export function CommentsIcon(props: IIconProps) {
+export function IconComments(props: IIconProps) {
   const { width = '100%', height = width} = props;
 
   return (

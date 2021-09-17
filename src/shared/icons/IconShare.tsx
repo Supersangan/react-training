@@ -5,7 +5,7 @@ interface IIconProps {
   height?: string;
 }
 
-export function ShareIcon(props: IIconProps) {
+export function IconShare(props: IIconProps) {
   const { width = '100%', height = width} = props;
 
   return (
