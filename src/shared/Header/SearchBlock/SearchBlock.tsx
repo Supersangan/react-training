@@ -4,11 +4,11 @@ import styles from './searchblock.css';
 import { UserBlock } from './UserBlock';
 
 export function SearchBlock() {
-  const { iconImage, name } = useContext(userContext);
+  const { iconImg, name } = useContext(userContext);
 
   return (
     <div className={styles.searchBlock}>
-      <UserBlock avatarSrc={iconImage} username={name} />
+      <UserBlock avatarSrc={iconImg} username={name} />
     </div>
   );
 }

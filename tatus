@@ -1,0 +1,201 @@
+[33mcommit 90ac6d3854909a40242c4d3a327526d96d11becf[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mauth-fixed[m[33m)[m
+Merge: eb788e0 2ec75af
+Author: Alexander Rekhviashvili <sangansuperman@ya.ru>
+Date:   Sat Sep 18 20:35:48 2021 +0300
+
+    Merge pull request #7 from Supersangan/auth-fixed
+    
+    authentication redirect_uri fixed
+
+[33mcommit 2ec75affd9633ec7d11d826aaf9d0530834ba97b[m[33m ([m[1;31morigin/auth-fixed[m[33m)[m
+Author: Alexander Rekhviashvili <sangansuperman@ya.ru>
+Date:   Sat Sep 18 20:20:54 2021 +0300
+
+    authentication redirect_uri fixed
+
+[33mcommit eb788e06eb5beca4d596014c672bd2afa68101fa[m
+Author: Alexander Rekhviashvili <sangansuperman@ya.ru>
+Date:   Sat Sep 18 19:40:18 2021 +0300
+
+    auxiliary commit
+
+[33mcommit 5fbdff58af1860459100193ee4bcd2095f5775e5[m
+Author: Alexander Rekhviashvili <sangansuperman@ya.ru>
+Date:   Fri Sep 17 17:23:54 2021 +0300
+
+    Reddit authorization added
+
+[33mcommit 5569d32bab53cfef796e9ce283d8e518a6705e0c[m
+Author: Alexander Rekhviashvili <sangansuperman@ya.ru>
+Date:   Thu Sep 16 15:30:07 2021 +0300
+
+    MenuDropdown edited, Text, Break, Icon components add, icons components added
+
+[33mcommit be04eaf292fc5e4b9e4570734815c21c3a2301e0[m
+Author: Alexander Rekhviashvili <sangansuperman@ya.ru>
+Date:   Wed Sep 8 16:42:51 2021 +0300
+
+    Dropdown menu added
+
+[33mcommit a2de64f810bbcb003f88c6bc6eb912c00dbab8b5[m
+Author: Alexander Rekhviashvili <sangansuperman@ya.ru>
+Date:   Fri Sep 3 20:51:15 2021 +0300
+
+    compose and pipe examples added
+
+[33mcommit f2f265de97a0f31c05bb8725e8bdef66cf00222d[m
+Author: Alexander Rekhviashvili <sangansuperman@ya.ru>
+Date:   Fri Sep 3 17:28:13 2021 +0300
+
+    Dropdown added
+
+[33mcommit 3c34e2aa7d0a725e3d740f8f17a70be6417ccb93[m
+Merge: 63e3ed4 0889c20
+Author: Alexander Rekhviashvili <sangansuperman@ya.ru>
+Date:   Fri Sep 3 12:49:39 2021 +0300
+
+    Merge pull request #6 from Supersangan/layout
+    
+    Layout
+
+[33mcommit 0889c20438affd6a2ef06c69cfaaf79355225430[m[33m ([m[1;31morigin/feature/generic-list-and-component-utils[m[33m, [m[1;32mlayout[m[33m)[m
+Author: Alexander Rekhviashvili <sangansuperman@ya.ru>
+Date:   Thu Sep 2 19:36:08 2021 +0300
+
+    GenericList add
+
+[33mcommit 416e7c80b3db6435fa9e6562fe3ae46d43565539[m
+Author: Alexander Rekhviashvili <sangansuperman@ya.ru>
+Date:   Tue Aug 17 23:12:58 2021 +0300
+
+    Lesson 5.1: Utils added, basic components added
+
+[33mcommit 63e3ed44ab40a8a7c4212106ddae98280c1a7eef[m
+Merge: a5b90b7 ca7f099
+Author: Alexander Rekhviashvili <sangansuperman@ya.ru>
+Date:   Mon Aug 9 12:19:42 2021 +0300
+
+    Merge pull request #5 from Supersangan/layout
+    
+    Layout
+
+[33mcommit ca7f099d6426a6a1f230341299d390c3fefe6650[m
+Author: Alexander Rekhviashvili <sangansuperman@ya.ru>
+Date:   Mon Aug 9 12:04:40 2021 +0300
+
+    Card component created
+
+[33mcommit f633e7c1c764b99b6a2e250e1b9a4cbfd649c94b[m
+Author: Alexander Rekhviashvili <sangansuperman@ya.ru>
+Date:   Mon Aug 9 11:50:52 2021 +0300
+
+    Card component created
+
+[33mcommit f24c3fc5b2c5525f563fb0150c9feb2e5d10af52[m
+Merge: 66f9754 a5b90b7
+Author: Alexander Rekhviashvili <sangansuperman@ya.ru>
+Date:   Mon Aug 9 11:46:31 2021 +0300
+
+    Merge branch 'main' of https://github.com/Supersangan/react-training into layout
+
+[33mcommit 66f97548e0b3f3b812409a3e0b457a32708c989d[m
+Author: Alexander Rekhviashvili <sangansuperman@ya.ru>
+Date:   Mon Aug 9 11:41:17 2021 +0300
+
+    Card component created
+
+[33mcommit a5b90b7bdbdc06d05bbf663c3ec086c8a4814816[m
+Merge: 8fe6256 5721d78
+Author: Alexander Rekhviashvili <sangansuperman@ya.ru>
+Date:   Thu Apr 1 02:34:47 2021 +0300
+
+    Merge pull request #4 from Supersangan/layout
+    
+    creating layout, classNames trouble
+
+[33mcommit 5721d78b4258990128c41b4b5c76cc6a03e4512b[m[33m ([m[1;31morigin/layout[m[33m)[m
+Author: Alexander Rekhviashvili <sangansuperman@ya.ru>
+Date:   Thu Apr 1 02:29:52 2021 +0300
+
+    header created, content created
+
+[33mcommit 2f77b30ddf2560d1ea65343897b3a3c1314503f2[m
+Author: Alexander Rekhviashvili <sangansuperman@ya.ru>
+Date:   Thu Apr 1 02:10:03 2021 +0300
+
+    header created, content created
+
+[33mcommit bd626887e2c9eeaf0bd46e53ba8444a523791801[m
+Author: Alexander Rekhviashvili <sangansuperman@ya.ru>
+Date:   Wed Mar 24 18:05:22 2021 +0300
+
+    css-loader problem fixed
+
+[33mcommit 93e906e04941f14cfceffe383960a1986bfac77f[m
+Author: Alexander Rekhviashvili <sangansuperman@ya.ru>
+Date:   Tue Mar 23 13:56:56 2021 +0300
+
+    creating layout, classNames trouble
+
+[33mcommit 8fe6256087ccf03e2fa9f33e75952761a1693fb2[m[33m ([m[1;32mcss-modules[m[33m)[m
+Merge: 65ddd2e ba47ce5
+Author: Alexander Rekhviashvili <sangansuperman@ya.ru>
+Date:   Tue Jan 26 14:39:52 2021 +0300
+
+    Merge pull request #3 from Supersangan/css-modules
+    
+    css modules added, jest added
+
+[33mcommit ba47ce5cc16dde7ff7877cfcfd9b463a5f81508c[m[33m ([m[1;31morigin/css-modules[m[33m)[m
+Author: Alexander Rekhviashvili <sangansuperman@ya.ru>
+Date:   Tue Jan 26 14:38:38 2021 +0300
+
+    css modules added, jest added
+
+[33mcommit 65ddd2e869f62076e320ff83c97308d31aa121bf[m
+Merge: a57d2b9 9045db1
+Author: Alexander Rekhviashvili <sangansuperman@ya.ru>
+Date:   Tue Jan 26 13:25:34 2021 +0300
+
+    Merge pull request #2 from Supersangan/ssr
+    
+    Ssr
+
+[33mcommit 9045db14bce6727effbfc232f063c6a184f35378[m[33m ([m[1;31morigin/ssr[m[33m, [m[1;32mssr[m[33m)[m
+Author: Alexander Rekhviashvili <sangansuperman@ya.ru>
+Date:   Tue Jan 26 13:23:34 2021 +0300
+
+    tsconfig.json edited
+
+[33mcommit 5dfcf69e57ee17cff93c952d0d472cd2e57e3313[m
+Author: Alexander Rekhviashvili <sangansuperman@ya.ru>
+Date:   Tue Jan 26 13:18:14 2021 +0300
+
+    HMR added
+
+[33mcommit a57d2b9f0067495382499aa86fb42cff59dffe1f[m
+Merge: 7c34267 12f9bc0
+Author: Alexander Rekhviashvili <sangansuperman@ya.ru>
+Date:   Fri Jan 22 11:56:00 2021 +0300
+
+    Merge pull request #1 from Supersangan/ssr
+    
+    ssr
+
+[33mcommit 12f9bc0a1b8a9f2058115a3e806c3ebce49d8ec5[m
+Author: Alexander Rekhviashvili <sangansuperman@ya.ru>
+Date:   Fri Jan 22 11:46:57 2021 +0300
+
+    ssr
+
+[33mcommit 7c342675c1893d4b5a6924f449ea00a274e0a50e[m
+Author: Alexander Rekhviashvili <sangansuperman@ya.ru>
+Date:   Mon Jan 18 22:15:08 2021 +0300
+
+    index.html start markup created
+
+[33mcommit 990c86f0de8612fc047e181de4bac3a43438c4cb[m
+Author: Alexander Rekhviashvili <sangansuperman@ya.ru>
+Date:   Mon Jan 18 21:58:38 2021 +0300
+
+    Create index.html

@@ -4,7 +4,7 @@ import { tokenContext } from "../shared/context/tokenContext";
 
 interface IUserData {
   name?: string;
-  iconImage?: string;
+  iconImg?: string;
 }
 
 export function useUserData() {
@@ -19,7 +19,7 @@ export function useUserData() {
       .then((resp) => {
         const userData = resp.data;
 
-        setData({ name: userData.name, iconImage: userData.icon_img });
+        setData({ name: userData.name, iconImg: userData.icon_img });
       })
       .catch(console.log);
   }, [token]);

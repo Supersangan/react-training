@@ -3,7 +3,7 @@ import { useUserData } from "../../hooks/useUserData";
 
 export interface IUserContextData {
   name?: string;
-  iconImage?: string;
+  iconImg?: string;
 }
 
 export const userContext = React.createContext<IUserContextData>({});
