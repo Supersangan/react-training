@@ -3,12 +3,12 @@ import { useUserData } from "../../hooks/useUserData";
 
 export interface IUserContextData {
   name?: string;
-  iconImage?: string;
+  iconImg?: string;
 }
 
 export const userContext = React.createContext<IUserContextData>({});
 
-export function UserContextProvider({children}: {children: React.ReactNode}) {
+export function UserContextProvider({ children }: { children: React.ReactNode }) {
   const [data] = useUserData();
 
   return (
