@@ -2,28 +2,41 @@ import React from 'react';
 import { CreatedAt } from './CreatedAt';
 import styles from './textcontent.css';
 
-export function TextContent() {
+interface ITextContentProps {
+  link: string;
+  title: string;
+  published: string;
+  authorName: string;
+  authorAvatarSrc: string;
+}
+
+export function TextContent(props: ITextContentProps) {
+  const { link, title, published, authorName, authorAvatarSrc } = props;
+
   return (
     <div className={styles.textContent}>
       <div className={styles.metaData}>
         <div className={styles.userLink}>
           <img
             className={styles.avatar}
-            src="https://cdn.dribbble.com/users/939433/screenshots/13626869/image.png?compress=1&resize=100x100"
+            src={
+              authorAvatarSrc ||
+              'https://cdn.dribbble.com/users/939433/screenshots/13626869/image.png?compress=1&resize=100x100'
+            }
             alt="avatar"
           />
 
           <a className={styles.username} href="#user-url">
-            Дмитрий Гришин
+            {authorName}
           </a>
         </div>
 
-        <CreatedAt />
+        <CreatedAt published={published} />
       </div>
 
       <h2 className={styles.title}>
-        <a className={styles.postLink} href="#post-url">
-          Следует отметить, что новая модель организационной деятельности
+        <a className={styles.postLink} href={`#${link}`}>
+          {title}
         </a>
       </h2>
     </div>

@@ -1,10 +1,14 @@
 import React from 'react';
 import styles from './createdat.css';
 
-export function CreatedAt() {
+interface ITextContentProps {
+  published: string;
+}
+
+export function CreatedAt({published}: ITextContentProps) {
   return (
     <span className={styles.createdAt}>
-      <span className={styles.publishedLabel}>опубликовано </span>4 часа назад
+      <span className={styles.publishedLabel}>опубликовано </span>{published} назад
     </span>
   );
 }
