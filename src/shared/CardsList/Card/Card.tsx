@@ -10,10 +10,10 @@ interface IPostData {
   authorName: string;
   created: number;
   link: string;
-  previewSrc: string;
+  previewSrc: string | null;
   score: number;
   title: string;
-  authorAvatarSrc: string;
+  authorAvatarSrc: string | null;
 }
 
 interface ICardProps {
@@ -21,28 +21,37 @@ interface ICardProps {
 }
 
 export function Card({ post }: ICardProps) {
-  const {
-    authorName,
-    created,
-    link,
-    previewSrc,
-    score,
-    title,
-    authorAvatarSrc,
-  } = post;
+  const { authorName, created, link, score, title } = post;
 
-  let published = msToTimeBefore(Date.now() - created * 1000);  
-  
+  let { previewSrc, authorAvatarSrc } = post;
+
+  previewSrc =
+    previewSrc == null
+      ? 'https://cdn.dribbble.com/users/2859475/screenshots/6960566/media/f3575c6f3f42056195c42591e1ff99a5.jpg'
+      : previewSrc;
+
+  authorAvatarSrc =
+    authorAvatarSrc == null
+      ? 'https://cdn.dribbble.com/users/939433/screenshots/13626869/image.png?compress=1&resize=100x100'
+      : authorAvatarSrc;
+
+  let published = msToTimeBefore(Date.now() - created * 1000);
+
   return (
     <li className={styles.card}>
-      <TextContent link={link} title={title} published={published} authorName={authorName} authorAvatarSrc={authorAvatarSrc}/>
+      <TextContent
+        link={link}
+        title={title}
+        published={published}
+        authorName={authorName}
+        authorAvatarSrc={authorAvatarSrc}
+      />
       <Preview src={previewSrc} />
       <Menu />
-      <Controls score={score}/>
+      <Controls score={score} />
     </li>
   );
 }
 function msToTimeFrom(arg0: number) {
   throw new Error('Function not implemented.');
 }
-

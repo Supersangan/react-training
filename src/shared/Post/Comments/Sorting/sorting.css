@@ -1,0 +1,12 @@
+.root {
+  padding: 20px 13px;
+  background: var(--grayF4);
+}
+
+@media (min-width: 1024px) {
+  .root {
+    padding: 0 0 13px 0;
+    border-bottom: 1px solid var(--grayD9);
+    background: transparent;
+  }
+}

@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Post } from '../../../Post';
 import { CreatedAt } from './CreatedAt';
 import styles from './textcontent.css';
 
@@ -12,19 +13,13 @@ interface ITextContentProps {
 
 export function TextContent(props: ITextContentProps) {
   const { link, title, published, authorName, authorAvatarSrc } = props;
+  const [isModalOpened, setIsModalOpened] = useState(false);
 
   return (
     <div className={styles.textContent}>
       <div className={styles.metaData}>
         <div className={styles.userLink}>
-          <img
-            className={styles.avatar}
-            src={
-              authorAvatarSrc ||
-              'https://cdn.dribbble.com/users/939433/screenshots/13626869/image.png?compress=1&resize=100x100'
-            }
-            alt="avatar"
-          />
+          <img className={styles.avatar} src={authorAvatarSrc} alt="avatar" />
 
           <a className={styles.username} href="#user-url">
             {authorName}
@@ -35,9 +30,23 @@ export function TextContent(props: ITextContentProps) {
       </div>
 
       <h2 className={styles.title}>
-        <a className={styles.postLink} href={`#${link}`}>
+        <a
+          className={styles.postLink}
+          href={`#${link}`}
+          onClick={() => {
+            setIsModalOpened(true);
+          }}
+        >
           {title}
         </a>
+
+        {isModalOpened && (
+          <Post
+            onClose={() => {
+              setIsModalOpened(false);
+            }}
+          />
+        )}
       </h2>
     </div>
   );

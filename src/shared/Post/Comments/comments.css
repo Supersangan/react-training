@@ -1,0 +1,19 @@
+.root {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.commentForm {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 1024px) {
+  .sorting {
+    margin-bottom: 27px;  
+  }
+
+  .commentForm {
+    order: -1;
+    margin-bottom: 35px;
+  }
+}
