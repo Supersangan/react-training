@@ -1,7 +1,7 @@
 import React from 'react';
 import { Break } from '../../../Break';
 import { IconAnon } from '../../../icons';
-import { EColors, Text } from '../../../Text';
+import { EColors, InlineText } from '../../../InlineText';
 import styles from './userblock.css';
 
 interface IUserBlockProps {
@@ -31,9 +31,9 @@ export function UserBlock({ avatarSrc, username }: IUserBlockProps) {
 
       <div className={styles.username}>
         <Break size={12} />
-        <Text size={20} color={username ? EColors.black : EColors.gray99}>
+        <InlineText size={20} color={username ? EColors.black : EColors.gray99}>
           {username || 'Аноним'}
-        </Text>
+        </InlineText>
       </div>
     </a>
   );

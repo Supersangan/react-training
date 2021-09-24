@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import { Post } from '../../../Post';
-import { CreatedAt } from './CreatedAt';
+import { CreatedAt } from '../../../CreatedAt';
 import styles from './textcontent.css';
+import { AuthorAvatar } from '../../../AuthorLink/AuthorAvatar';
+import { AuthorLink } from '../../../AuthorLink';
+import { AuthorName } from '../../../AuthorLink/AuthorName';
 
 interface ITextContentProps {
   link: string;
@@ -18,15 +21,13 @@ export function TextContent(props: ITextContentProps) {
   return (
     <div className={styles.textContent}>
       <div className={styles.metaData}>
-        <div className={styles.userLink}>
-          <img className={styles.avatar} src={authorAvatarSrc} alt="avatar" />
+      <AuthorLink href="#user-link">
+          <AuthorAvatar src={authorAvatarSrc}/>
+          <AuthorName name={authorName} />
+        </AuthorLink>
 
-          <a className={styles.username} href="#user-url">
-            {authorName}
-          </a>
-        </div>
 
-        <CreatedAt published={published} />
+        <CreatedAt labeled text={published} />
       </div>
 
       <h2 className={styles.title}>

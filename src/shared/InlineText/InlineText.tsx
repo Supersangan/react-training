@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import React from 'react';
-import styles from './text.css';
+import styles from './inlinetext.css';
 
 export enum EColors {
   inherit = 'inherit',
@@ -29,7 +29,7 @@ interface ITextProps {
   bold?: boolean;
 }
 
-export function Text(props: ITextProps) {
+export function InlineText(props: ITextProps) {
   const {
     As = 'span',
     color = EColors.inherit,

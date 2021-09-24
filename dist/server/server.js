@@ -10,6 +10,36 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/shared/AuthorLink/AuthorAvatar/authoravatar.css":
+/*!*************************************************************!*\
+  !*** ./src/shared/AuthorLink/AuthorAvatar/authoravatar.css ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n\t\"root\": \"authoravatar__root--jz2ka\"\n});\n\n\n//# sourceURL=webpack://react-training/./src/shared/AuthorLink/AuthorAvatar/authoravatar.css?");
+
+/***/ }),
+
+/***/ "./src/shared/AuthorLink/AuthorName/authorname.css":
+/*!*********************************************************!*\
+  !*** ./src/shared/AuthorLink/AuthorName/authorname.css ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n\t\"root\": \"authorname__root--c-Ulm\"\n});\n\n\n//# sourceURL=webpack://react-training/./src/shared/AuthorLink/AuthorName/authorname.css?");
+
+/***/ }),
+
+/***/ "./src/shared/AuthorLink/authorlink.css":
+/*!**********************************************!*\
+  !*** ./src/shared/AuthorLink/authorlink.css ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n\t\"root\": \"authorlink__root--27z0w\"\n});\n\n\n//# sourceURL=webpack://react-training/./src/shared/AuthorLink/authorlink.css?");
+
+/***/ }),
+
 /***/ "./src/shared/Break/break.css":
 /*!************************************!*\
   !*** ./src/shared/Break/break.css ***!
@@ -27,16 +57,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n\t\"saveButton\": \"savebutton__saveButton--2hjdh\"\n});\n\n\n//# sourceURL=webpack://react-training/./src/shared/CardsList/Card/Controls/Actions/SaveButton/savebutton.css?");
-
-/***/ }),
-
-/***/ "./src/shared/CardsList/Card/Controls/Actions/ShareButton/sharebutton.css":
-/*!********************************************************************************!*\
-  !*** ./src/shared/CardsList/Card/Controls/Actions/ShareButton/sharebutton.css ***!
-  \********************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n\t\"shareButton\": \"sharebutton__shareButton--3HY3G\"\n});\n\n\n//# sourceURL=webpack://react-training/./src/shared/CardsList/Card/Controls/Actions/ShareButton/sharebutton.css?");
 
 /***/ }),
 
@@ -110,16 +130,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./src/shared/CardsList/Card/TextContent/CreatedAt/createdat.css":
-/*!***********************************************************************!*\
-  !*** ./src/shared/CardsList/Card/TextContent/CreatedAt/createdat.css ***!
-  \***********************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n\t\"createdAt\": \"createdat__createdAt--13KIh\",\n\t\"publishedLabel\": \"createdat__publishedLabel--1djxQ\"\n});\n\n\n//# sourceURL=webpack://react-training/./src/shared/CardsList/Card/TextContent/CreatedAt/createdat.css?");
-
-/***/ }),
-
 /***/ "./src/shared/CardsList/Card/TextContent/textcontent.css":
 /*!***************************************************************!*\
   !*** ./src/shared/CardsList/Card/TextContent/textcontent.css ***!
@@ -167,6 +177,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n\t\"content\": \"content__content--3z6rw\"\n});\n\n\n//# sourceURL=webpack://react-training/./src/shared/Content/content.css?");
+
+/***/ }),
+
+/***/ "./src/shared/CreatedAt/createdat.css":
+/*!********************************************!*\
+  !*** ./src/shared/CreatedAt/createdat.css ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n\t\"root\": \"createdat__root--hIbSe\",\n\t\"publishedLabel\": \"createdat__publishedLabel--3HAp0\"\n});\n\n\n//# sourceURL=webpack://react-training/./src/shared/CreatedAt/createdat.css?");
 
 /***/ }),
 
@@ -250,6 +270,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/shared/InlineText/inlinetext.css":
+/*!**********************************************!*\
+  !*** ./src/shared/InlineText/inlinetext.css ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n\t\"s28\": \"inlinetext__s28--2W9de\",\n\t\"s20\": \"inlinetext__s20--34PFq\",\n\t\"s16\": \"inlinetext__s16--NgBSL\",\n\t\"s14\": \"inlinetext__s14--2nnZ5\",\n\t\"s12\": \"inlinetext__s12--3SQ0h\",\n\t\"s10\": \"inlinetext__s10--3omjI\",\n\t\"bold\": \"inlinetext__bold--FP13o\",\n\t\"black\": \"inlinetext__black--Anehe\",\n\t\"orange\": \"inlinetext__orange--1pTZi\",\n\t\"green\": \"inlinetext__green--2rKrh\",\n\t\"white\": \"inlinetext__white--3GJPa\",\n\t\"grayF4\": \"inlinetext__grayF4--13try\",\n\t\"grayF3\": \"inlinetext__grayF3--3j-nz\",\n\t\"grayD9\": \"inlinetext__grayD9--3nwjs\",\n\t\"grayC4\": \"inlinetext__grayC4--2Q9L5\",\n\t\"gray99\": \"inlinetext__gray99--3ID7P\",\n\t\"gray66\": \"inlinetext__gray66--35XKo\",\n\t\"m28\": \"inlinetext__m28--3FmCE\",\n\t\"m20\": \"inlinetext__m20--kB1ZQ\",\n\t\"m16\": \"inlinetext__m16--QuUgt\",\n\t\"m14\": \"inlinetext__m14--2hd0G\",\n\t\"m12\": \"inlinetext__m12--1V996\",\n\t\"m10\": \"inlinetext__m10--3enmv\",\n\t\"t28\": \"inlinetext__t28--1YQE_\",\n\t\"t20\": \"inlinetext__t20--2Ibg_\",\n\t\"t16\": \"inlinetext__t16--qgQ0V\",\n\t\"t14\": \"inlinetext__t14--1iEhK\",\n\t\"t12\": \"inlinetext__t12--2xBjJ\",\n\t\"t10\": \"inlinetext__t10--pyKQ5\",\n\t\"d28\": \"inlinetext__d28--135wk\",\n\t\"d20\": \"inlinetext__d20--vownb\",\n\t\"d16\": \"inlinetext__d16--2rRel\",\n\t\"d14\": \"inlinetext__d14--3F7H4\",\n\t\"d12\": \"inlinetext__d12--3qO4H\",\n\t\"d10\": \"inlinetext__d10--2rOTc\"\n});\n\n\n//# sourceURL=webpack://react-training/./src/shared/InlineText/inlinetext.css?");
+
+/***/ }),
+
 /***/ "./src/shared/Layout/layout.css":
 /*!**************************************!*\
   !*** ./src/shared/Layout/layout.css ***!
@@ -257,6 +287,36 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n\t\"layout\": \"layout__layout--1BrJT\"\n});\n\n\n//# sourceURL=webpack://react-training/./src/shared/Layout/layout.css?");
+
+/***/ }),
+
+/***/ "./src/shared/Post/Comments/Comment/Header/header.css":
+/*!************************************************************!*\
+  !*** ./src/shared/Post/Comments/Comment/Header/header.css ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n\t\"root\": \"header__root--2tsj9\",\n\t\"label\": \"header__label--jl4WC\",\n\t\"metaData\": \"header__metaData--2Jalw\"\n});\n\n\n//# sourceURL=webpack://react-training/./src/shared/Post/Comments/Comment/Header/header.css?");
+
+/***/ }),
+
+/***/ "./src/shared/Post/Comments/Comment/KarmaCounter/karmacounter.css":
+/*!************************************************************************!*\
+  !*** ./src/shared/Post/Comments/Comment/KarmaCounter/karmacounter.css ***!
+  \************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n\t\"root\": \"karmacounter__root--3Nt7e\",\n\t\"karmaValue\": \"karmacounter__karmaValue--3Y1TF\",\n\t\"sRow\": \"karmacounter__sRow--1vy9P\",\n\t\"sColumn\": \"karmacounter__sColumn--2HPPD\",\n\t\"mRow\": \"karmacounter__mRow--3swLW\",\n\t\"mColumn\": \"karmacounter__mColumn--PIqJP\",\n\t\"tRow\": \"karmacounter__tRow--1IQ1d\",\n\t\"tColumn\": \"karmacounter__tColumn--31Y4B\",\n\t\"dRow\": \"karmacounter__dRow--22eJF\",\n\t\"dColumn\": \"karmacounter__dColumn--1nf6w\"\n});\n\n\n//# sourceURL=webpack://react-training/./src/shared/Post/Comments/Comment/KarmaCounter/karmacounter.css?");
+
+/***/ }),
+
+/***/ "./src/shared/Post/Comments/Comment/comment.css":
+/*!******************************************************!*\
+  !*** ./src/shared/Post/Comments/Comment/comment.css ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n\t\"root\": \"comment__root--3M9FO\",\n\t\"controls\": \"comment__controls--3w_rN\",\n\t\"aside\": \"comment__aside--2tjp3\",\n\t\"asideKarmaCounter\": \"comment__asideKarmaCounter--1XEj5\",\n\t\"indent\": \"comment__indent--3wwJv\",\n\t\"header\": \"comment__header--29sYg\",\n\t\"text\": \"comment__text--2iwq4\",\n\t\"answerButton\": \"comment__answerButton--1r1FG\",\n\t\"actions\": \"comment__actions--3oCAK\",\n\t\"actionsButton\": \"comment__actionsButton--1bOmg\",\n\t\"actionsIcon\": \"comment__actionsIcon--25j5G\",\n\t\"actionsIconShare\": \"comment__actionsIconShare--N5rJq\",\n\t\"actionsIconReport\": \"comment__actionsIconReport--3b7-b\",\n\t\"actionsLabel\": \"comment__actionsLabel--wCpwt\",\n\t\"controlsKarmaCounter\": \"comment__controlsKarmaCounter--zId--\"\n});\n\n\n//# sourceURL=webpack://react-training/./src/shared/Post/Comments/Comment/comment.css?");
 
 /***/ }),
 
@@ -287,16 +347,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n\t\"modal\": \"post__modal--75X8Z\",\n\t\"content\": \"post__content--3guAH\",\n\t\"close\": \"post__close--3TG_d\"\n});\n\n\n//# sourceURL=webpack://react-training/./src/shared/Post/post.css?");
-
-/***/ }),
-
-/***/ "./src/shared/Text/text.css":
-/*!**********************************!*\
-  !*** ./src/shared/Text/text.css ***!
-  \**********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n\t\"s28\": \"text__s28--1Y0UD\",\n\t\"s20\": \"text__s20--1rcCY\",\n\t\"s16\": \"text__s16--357-u\",\n\t\"s14\": \"text__s14--1yRIX\",\n\t\"s12\": \"text__s12--2VLJ9\",\n\t\"s10\": \"text__s10--34Ke5\",\n\t\"bold\": \"text__bold--3b6dr\",\n\t\"black\": \"text__black--195ax\",\n\t\"orange\": \"text__orange--KcfSv\",\n\t\"green\": \"text__green--1DoOT\",\n\t\"white\": \"text__white--3mLIt\",\n\t\"grayF4\": \"text__grayF4--1oOG1\",\n\t\"grayF3\": \"text__grayF3--1Xou3\",\n\t\"grayD9\": \"text__grayD9--cqWK1\",\n\t\"grayC4\": \"text__grayC4--HXeWl\",\n\t\"gray99\": \"text__gray99--kvku7\",\n\t\"gray66\": \"text__gray66--1yMgA\",\n\t\"m28\": \"text__m28--3V7S6\",\n\t\"m20\": \"text__m20--Wd-DD\",\n\t\"m16\": \"text__m16--18mow\",\n\t\"m14\": \"text__m14--1mzQ-\",\n\t\"m12\": \"text__m12--ote0y\",\n\t\"m10\": \"text__m10--2mNG-\",\n\t\"t28\": \"text__t28--1l9fS\",\n\t\"t20\": \"text__t20--1VzKx\",\n\t\"t16\": \"text__t16--1X1iF\",\n\t\"t14\": \"text__t14--1vRqk\",\n\t\"t12\": \"text__t12--1xY59\",\n\t\"t10\": \"text__t10--3ZtjN\",\n\t\"d28\": \"text__d28--1ibsu\",\n\t\"d20\": \"text__d20--3jXqu\",\n\t\"d16\": \"text__d16--2YSFB\",\n\t\"d14\": \"text__d14--23tcT\",\n\t\"d12\": \"text__d12--1Jnvi\",\n\t\"d10\": \"text__d10--BMyk4\"\n});\n\n\n//# sourceURL=webpack://react-training/./src/shared/Text/text.css?");
 
 /***/ }),
 
@@ -370,6 +420,66 @@ eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod)
 
 /***/ }),
 
+/***/ "./src/shared/AuthorLink/AuthorAvatar/AuthorAvatar.tsx":
+/*!*************************************************************!*\
+  !*** ./src/shared/AuthorLink/AuthorAvatar/AuthorAvatar.tsx ***!
+  \*************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nexports.AuthorAvatar = void 0;\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nvar authoravatar_css_1 = __importDefault(__webpack_require__(/*! ./authoravatar.css */ \"./src/shared/AuthorLink/AuthorAvatar/authoravatar.css\"));\r\nfunction AuthorAvatar(_a) {\r\n    var src = _a.src;\r\n    src = src ? src : \"https://cdn.dribbble.com/users/939433/screenshots/13626869/image.png?compress=1&resize=100x100\";\r\n    return react_1.default.createElement(\"img\", { className: authoravatar_css_1.default.root, src: src, alt: \"avatar\" });\r\n}\r\nexports.AuthorAvatar = AuthorAvatar;\r\n\n\n//# sourceURL=webpack://react-training/./src/shared/AuthorLink/AuthorAvatar/AuthorAvatar.tsx?");
+
+/***/ }),
+
+/***/ "./src/shared/AuthorLink/AuthorAvatar/index.ts":
+/*!*****************************************************!*\
+  !*** ./src/shared/AuthorLink/AuthorAvatar/index.ts ***!
+  \*****************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\r\n}) : (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    o[k2] = m[k];\r\n}));\r\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\r\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\n__exportStar(__webpack_require__(/*! ./AuthorAvatar */ \"./src/shared/AuthorLink/AuthorAvatar/AuthorAvatar.tsx\"), exports);\r\n\n\n//# sourceURL=webpack://react-training/./src/shared/AuthorLink/AuthorAvatar/index.ts?");
+
+/***/ }),
+
+/***/ "./src/shared/AuthorLink/AuthorLink.tsx":
+/*!**********************************************!*\
+  !*** ./src/shared/AuthorLink/AuthorLink.tsx ***!
+  \**********************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nexports.AuthorLink = void 0;\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nvar authorlink_css_1 = __importDefault(__webpack_require__(/*! ./authorlink.css */ \"./src/shared/AuthorLink/authorlink.css\"));\r\nfunction AuthorLink(_a) {\r\n    var href = _a.href, children = _a.children;\r\n    return (react_1.default.createElement(\"a\", { className: authorlink_css_1.default.root, href: href }, children));\r\n}\r\nexports.AuthorLink = AuthorLink;\r\n\n\n//# sourceURL=webpack://react-training/./src/shared/AuthorLink/AuthorLink.tsx?");
+
+/***/ }),
+
+/***/ "./src/shared/AuthorLink/AuthorName/AuthorName.tsx":
+/*!*********************************************************!*\
+  !*** ./src/shared/AuthorLink/AuthorName/AuthorName.tsx ***!
+  \*********************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nexports.AuthorName = void 0;\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nvar authorname_css_1 = __importDefault(__webpack_require__(/*! ./authorname.css */ \"./src/shared/AuthorLink/AuthorName/authorname.css\"));\r\nfunction AuthorName(_a) {\r\n    var name = _a.name;\r\n    return (react_1.default.createElement(\"span\", { className: authorname_css_1.default.root }, name));\r\n}\r\nexports.AuthorName = AuthorName;\r\n\n\n//# sourceURL=webpack://react-training/./src/shared/AuthorLink/AuthorName/AuthorName.tsx?");
+
+/***/ }),
+
+/***/ "./src/shared/AuthorLink/AuthorName/index.ts":
+/*!***************************************************!*\
+  !*** ./src/shared/AuthorLink/AuthorName/index.ts ***!
+  \***************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\r\n}) : (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    o[k2] = m[k];\r\n}));\r\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\r\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\n__exportStar(__webpack_require__(/*! ./AuthorName */ \"./src/shared/AuthorLink/AuthorName/AuthorName.tsx\"), exports);\r\n\n\n//# sourceURL=webpack://react-training/./src/shared/AuthorLink/AuthorName/index.ts?");
+
+/***/ }),
+
+/***/ "./src/shared/AuthorLink/index.ts":
+/*!****************************************!*\
+  !*** ./src/shared/AuthorLink/index.ts ***!
+  \****************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\r\n}) : (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    o[k2] = m[k];\r\n}));\r\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\r\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\n__exportStar(__webpack_require__(/*! ./AuthorLink */ \"./src/shared/AuthorLink/AuthorLink.tsx\"), exports);\r\n\n\n//# sourceURL=webpack://react-training/./src/shared/AuthorLink/index.ts?");
+
+/***/ }),
+
 /***/ "./src/shared/Break/Break.tsx":
 /*!************************************!*\
   !*** ./src/shared/Break/Break.tsx ***!
@@ -406,7 +516,7 @@ eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod)
   \****************************************************************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
-eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nexports.Actions = void 0;\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nvar actions_css_1 = __importDefault(__webpack_require__(/*! ./actions.css */ \"./src/shared/CardsList/Card/Controls/Actions/actions.css\"));\r\nvar SaveButton_1 = __webpack_require__(/*! ./SaveButton */ \"./src/shared/CardsList/Card/Controls/Actions/SaveButton/index.ts\");\r\nvar ShareButton_1 = __webpack_require__(/*! ./ShareButton */ \"./src/shared/CardsList/Card/Controls/Actions/ShareButton/index.ts\");\r\nfunction Actions() {\r\n    return (react_1.default.createElement(\"div\", { className: actions_css_1.default.actions },\r\n        react_1.default.createElement(ShareButton_1.ShareButton, null),\r\n        react_1.default.createElement(SaveButton_1.SaveButton, null)));\r\n}\r\nexports.Actions = Actions;\r\n\n\n//# sourceURL=webpack://react-training/./src/shared/CardsList/Card/Controls/Actions/Actions.tsx?");
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nexports.Actions = void 0;\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nvar SaveButton_1 = __webpack_require__(/*! ./SaveButton */ \"./src/shared/CardsList/Card/Controls/Actions/SaveButton/index.ts\");\r\nvar actions_css_1 = __importDefault(__webpack_require__(/*! ./actions.css */ \"./src/shared/CardsList/Card/Controls/Actions/actions.css\"));\r\nfunction Actions() {\r\n    return (react_1.default.createElement(\"div\", { className: actions_css_1.default.actions },\r\n        react_1.default.createElement(SaveButton_1.SaveButton, null),\r\n        react_1.default.createElement(SaveButton_1.SaveButton, null)));\r\n}\r\nexports.Actions = Actions;\r\n\n\n//# sourceURL=webpack://react-training/./src/shared/CardsList/Card/Controls/Actions/Actions.tsx?");
 
 /***/ }),
 
@@ -427,26 +537,6 @@ eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod)
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\r\n}) : (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    o[k2] = m[k];\r\n}));\r\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\r\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\n__exportStar(__webpack_require__(/*! ./SaveButton */ \"./src/shared/CardsList/Card/Controls/Actions/SaveButton/SaveButton.tsx\"), exports);\r\n\n\n//# sourceURL=webpack://react-training/./src/shared/CardsList/Card/Controls/Actions/SaveButton/index.ts?");
-
-/***/ }),
-
-/***/ "./src/shared/CardsList/Card/Controls/Actions/ShareButton/ShareButton.tsx":
-/*!********************************************************************************!*\
-  !*** ./src/shared/CardsList/Card/Controls/Actions/ShareButton/ShareButton.tsx ***!
-  \********************************************************************************/
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
-
-eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nexports.ShareButton = void 0;\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nvar sharebutton_css_1 = __importDefault(__webpack_require__(/*! ./sharebutton.css */ \"./src/shared/CardsList/Card/Controls/Actions/ShareButton/sharebutton.css\"));\r\nfunction ShareButton() {\r\n    return (react_1.default.createElement(\"button\", { className: sharebutton_css_1.default.shareButton },\r\n        react_1.default.createElement(\"svg\", { width: \"20\", height: \"20\", viewBox: \"0 0 20 20\", fill: \"none\", xmlns: \"http://www.w3.org/2000/svg\" },\r\n            react_1.default.createElement(\"circle\", { cx: \"10\", cy: \"10\", r: \"10\", fill: \"#C4C4C4\" }),\r\n            react_1.default.createElement(\"path\", { d: \"M11.6667 12.0683C11.3289 12.0683 11.0267 12.2189 10.7956 12.4548L7.62667 10.3715C7.64889 10.256 7.66667 10.1406 7.66667 10.0201C7.66667 9.8996 7.64889 9.78414 7.62667 9.66867L10.76 7.60542C11 7.85643 11.3156 8.01205 11.6667 8.01205C12.4044 8.01205 13 7.33936 13 6.50602C13 5.67269 12.4044 5 11.6667 5C10.9289 5 10.3333 5.67269 10.3333 6.50602C10.3333 6.62651 10.3511 6.74197 10.3733 6.85743L7.24 8.92068C7 8.66968 6.68444 8.51406 6.33333 8.51406C5.59556 8.51406 5 9.18675 5 10.0201C5 10.8534 5.59556 11.5261 6.33333 11.5261C6.68444 11.5261 7 11.3705 7.24 11.1195L10.4044 13.2078C10.3822 13.3133 10.3689 13.4237 10.3689 13.5341C10.3689 14.3424 10.9511 15 11.6667 15C12.3822 15 12.9644 14.3424 12.9644 13.5341C12.9644 12.7259 12.3822 12.0683 11.6667 12.0683Z\", fill: \"white\" }))));\r\n}\r\nexports.ShareButton = ShareButton;\r\n\n\n//# sourceURL=webpack://react-training/./src/shared/CardsList/Card/Controls/Actions/ShareButton/ShareButton.tsx?");
-
-/***/ }),
-
-/***/ "./src/shared/CardsList/Card/Controls/Actions/ShareButton/index.ts":
-/*!*************************************************************************!*\
-  !*** ./src/shared/CardsList/Card/Controls/Actions/ShareButton/index.ts ***!
-  \*************************************************************************/
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
-
-eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\r\n}) : (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    o[k2] = m[k];\r\n}));\r\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\r\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\n__exportStar(__webpack_require__(/*! ./ShareButton */ \"./src/shared/CardsList/Card/Controls/Actions/ShareButton/ShareButton.tsx\"), exports);\r\n\n\n//# sourceURL=webpack://react-training/./src/shared/CardsList/Card/Controls/Actions/ShareButton/index.ts?");
 
 /***/ }),
 
@@ -536,7 +626,7 @@ eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod)
   \**************************************************************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
-eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nexports.MenuList = void 0;\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nvar Break_1 = __webpack_require__(/*! ../../../../Break */ \"./src/shared/Break/index.ts\");\r\nvar Text_1 = __webpack_require__(/*! ../../../../Text */ \"./src/shared/Text/index.ts\");\r\nvar Icon_1 = __webpack_require__(/*! ../../../../Icon */ \"./src/shared/Icon/index.ts\");\r\nvar menulist_css_1 = __importDefault(__webpack_require__(/*! ./menulist.css */ \"./src/shared/CardsList/Card/Menu/MenuList/menulist.css\"));\r\nfunction MenuList() {\r\n    return (react_1.default.createElement(react_1.default.Fragment, null,\r\n        react_1.default.createElement(\"ul\", { className: menulist_css_1.default.root },\r\n            react_1.default.createElement(\"li\", { className: menulist_css_1.default.itemWrapper + ' ' + menulist_css_1.default.itemWrapper_tabletMin },\r\n                react_1.default.createElement(\"a\", { className: menulist_css_1.default.item, href: \"#comments\" },\r\n                    react_1.default.createElement(Icon_1.Icon, { name: Icon_1.EIcons.comments, size: 16 }),\r\n                    react_1.default.createElement(Break_1.Break, { size: 6, inline: true }),\r\n                    react_1.default.createElement(Text_1.Text, { size: 14, mobileSize: 12 }, \"\\u041A\\u043E\\u043C\\u043C\\u0435\\u043D\\u0442\\u0430\\u0440\\u0438\\u0438\"))),\r\n            react_1.default.createElement(\"li\", { className: menulist_css_1.default.itemWrapper + ' ' + menulist_css_1.default.itemWrapper_tabletMin },\r\n                react_1.default.createElement(\"a\", { className: menulist_css_1.default.item, href: \"#share\" },\r\n                    react_1.default.createElement(Icon_1.Icon, { name: Icon_1.EIcons.share, size: 16 }),\r\n                    react_1.default.createElement(Break_1.Break, { size: 6, inline: true }),\r\n                    react_1.default.createElement(Text_1.Text, { size: 14, mobileSize: 12 }, \"\\u041F\\u043E\\u0434\\u0435\\u043B\\u0438\\u0442\\u044C\\u0441\\u044F\"))),\r\n            react_1.default.createElement(\"li\", { className: menulist_css_1.default.itemWrapper },\r\n                react_1.default.createElement(\"a\", { className: menulist_css_1.default.item, href: \"#hide\" },\r\n                    react_1.default.createElement(Icon_1.Icon, { name: Icon_1.EIcons.hide, size: 16 }),\r\n                    react_1.default.createElement(Break_1.Break, { size: 6, inline: true }),\r\n                    react_1.default.createElement(Text_1.Text, { size: 14, mobileSize: 12 }, \"\\u0421\\u043A\\u0440\\u044B\\u0442\\u044C\"))),\r\n            react_1.default.createElement(\"li\", { className: menulist_css_1.default.itemWrapper + ' ' + menulist_css_1.default.itemWrapper_tabletMin },\r\n                react_1.default.createElement(\"a\", { className: menulist_css_1.default.item, href: \"#save\" },\r\n                    react_1.default.createElement(Icon_1.Icon, { name: Icon_1.EIcons.save, size: 16 }),\r\n                    react_1.default.createElement(Break_1.Break, { size: 6, mobileSize: 12, inline: true }),\r\n                    react_1.default.createElement(Text_1.Text, { size: 14, mobileSize: 12 }, \"\\u0421\\u043E\\u0445\\u0440\\u0430\\u043D\\u0438\\u0442\\u044C\"))),\r\n            react_1.default.createElement(\"li\", { className: menulist_css_1.default.itemWrapper },\r\n                react_1.default.createElement(\"a\", { className: menulist_css_1.default.item, href: \"#report\" },\r\n                    react_1.default.createElement(Icon_1.Icon, { name: Icon_1.EIcons.report, size: 16 }),\r\n                    react_1.default.createElement(Break_1.Break, { size: 6, inline: true }),\r\n                    react_1.default.createElement(Text_1.Text, { size: 14, mobileSize: 12 }, \"\\u041F\\u043E\\u0436\\u0430\\u043B\\u043E\\u0432\\u0430\\u0442\\u044C\\u0441\\u044F\"))),\r\n            react_1.default.createElement(\"li\", { className: menulist_css_1.default.itemWrapper + ' ' + menulist_css_1.default.itemWrapper_tabletMax },\r\n                react_1.default.createElement(\"a\", { className: menulist_css_1.default.item + ' ' + menulist_css_1.default.item_close, href: \"#close\" },\r\n                    react_1.default.createElement(Text_1.Text, { size: 14 }, \"\\u0417\\u0430\\u043A\\u0440\\u044B\\u0442\\u044C\"))))));\r\n}\r\nexports.MenuList = MenuList;\r\n\n\n//# sourceURL=webpack://react-training/./src/shared/CardsList/Card/Menu/MenuList/MenuList.tsx?");
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nexports.MenuList = void 0;\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nvar Break_1 = __webpack_require__(/*! ../../../../Break */ \"./src/shared/Break/index.ts\");\r\nvar InlineText_1 = __webpack_require__(/*! ../../../../InlineText */ \"./src/shared/InlineText/index.ts\");\r\nvar Icon_1 = __webpack_require__(/*! ../../../../Icon */ \"./src/shared/Icon/index.ts\");\r\nvar menulist_css_1 = __importDefault(__webpack_require__(/*! ./menulist.css */ \"./src/shared/CardsList/Card/Menu/MenuList/menulist.css\"));\r\nfunction MenuList() {\r\n    return (react_1.default.createElement(react_1.default.Fragment, null,\r\n        react_1.default.createElement(\"ul\", { className: menulist_css_1.default.root },\r\n            react_1.default.createElement(\"li\", { className: menulist_css_1.default.itemWrapper + ' ' + menulist_css_1.default.itemWrapper_tabletMin },\r\n                react_1.default.createElement(\"a\", { className: menulist_css_1.default.item, href: \"#comments\" },\r\n                    react_1.default.createElement(Icon_1.Icon, { name: Icon_1.EIcons.comments, size: 16 }),\r\n                    react_1.default.createElement(Break_1.Break, { size: 6, inline: true }),\r\n                    react_1.default.createElement(InlineText_1.InlineText, { size: 14, mobileSize: 12 }, \"\\u041A\\u043E\\u043C\\u043C\\u0435\\u043D\\u0442\\u0430\\u0440\\u0438\\u0438\"))),\r\n            react_1.default.createElement(\"li\", { className: menulist_css_1.default.itemWrapper + ' ' + menulist_css_1.default.itemWrapper_tabletMin },\r\n                react_1.default.createElement(\"a\", { className: menulist_css_1.default.item, href: \"#share\" },\r\n                    react_1.default.createElement(Icon_1.Icon, { name: Icon_1.EIcons.share, size: 16 }),\r\n                    react_1.default.createElement(Break_1.Break, { size: 6, inline: true }),\r\n                    react_1.default.createElement(InlineText_1.InlineText, { size: 14, mobileSize: 12 }, \"\\u041F\\u043E\\u0434\\u0435\\u043B\\u0438\\u0442\\u044C\\u0441\\u044F\"))),\r\n            react_1.default.createElement(\"li\", { className: menulist_css_1.default.itemWrapper },\r\n                react_1.default.createElement(\"a\", { className: menulist_css_1.default.item, href: \"#hide\" },\r\n                    react_1.default.createElement(Icon_1.Icon, { name: Icon_1.EIcons.hide, size: 16 }),\r\n                    react_1.default.createElement(Break_1.Break, { size: 6, inline: true }),\r\n                    react_1.default.createElement(InlineText_1.InlineText, { size: 14, mobileSize: 12 }, \"\\u0421\\u043A\\u0440\\u044B\\u0442\\u044C\"))),\r\n            react_1.default.createElement(\"li\", { className: menulist_css_1.default.itemWrapper + ' ' + menulist_css_1.default.itemWrapper_tabletMin },\r\n                react_1.default.createElement(\"a\", { className: menulist_css_1.default.item, href: \"#save\" },\r\n                    react_1.default.createElement(Icon_1.Icon, { name: Icon_1.EIcons.save, size: 16 }),\r\n                    react_1.default.createElement(Break_1.Break, { size: 6, mobileSize: 12, inline: true }),\r\n                    react_1.default.createElement(InlineText_1.InlineText, { size: 14, mobileSize: 12 }, \"\\u0421\\u043E\\u0445\\u0440\\u0430\\u043D\\u0438\\u0442\\u044C\"))),\r\n            react_1.default.createElement(\"li\", { className: menulist_css_1.default.itemWrapper },\r\n                react_1.default.createElement(\"a\", { className: menulist_css_1.default.item, href: \"#report\" },\r\n                    react_1.default.createElement(Icon_1.Icon, { name: Icon_1.EIcons.report, size: 16 }),\r\n                    react_1.default.createElement(Break_1.Break, { size: 6, inline: true }),\r\n                    react_1.default.createElement(InlineText_1.InlineText, { size: 14, mobileSize: 12 }, \"\\u041F\\u043E\\u0436\\u0430\\u043B\\u043E\\u0432\\u0430\\u0442\\u044C\\u0441\\u044F\"))),\r\n            react_1.default.createElement(\"li\", { className: menulist_css_1.default.itemWrapper + ' ' + menulist_css_1.default.itemWrapper_tabletMax },\r\n                react_1.default.createElement(\"a\", { className: menulist_css_1.default.item + ' ' + menulist_css_1.default.item_close, href: \"#close\" },\r\n                    react_1.default.createElement(InlineText_1.InlineText, { size: 14 }, \"\\u0417\\u0430\\u043A\\u0440\\u044B\\u0442\\u044C\"))))));\r\n}\r\nexports.MenuList = MenuList;\r\n\n\n//# sourceURL=webpack://react-training/./src/shared/CardsList/Card/Menu/MenuList/MenuList.tsx?");
 
 /***/ }),
 
@@ -580,33 +670,13 @@ eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create
 
 /***/ }),
 
-/***/ "./src/shared/CardsList/Card/TextContent/CreatedAt/CreatedAt.tsx":
-/*!***********************************************************************!*\
-  !*** ./src/shared/CardsList/Card/TextContent/CreatedAt/CreatedAt.tsx ***!
-  \***********************************************************************/
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
-
-eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nexports.CreatedAt = void 0;\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nvar createdat_css_1 = __importDefault(__webpack_require__(/*! ./createdat.css */ \"./src/shared/CardsList/Card/TextContent/CreatedAt/createdat.css\"));\r\nfunction CreatedAt(_a) {\r\n    var published = _a.published;\r\n    return (react_1.default.createElement(\"span\", { className: createdat_css_1.default.createdAt },\r\n        react_1.default.createElement(\"span\", { className: createdat_css_1.default.publishedLabel }, \"\\u043E\\u043F\\u0443\\u0431\\u043B\\u0438\\u043A\\u043E\\u0432\\u0430\\u043D\\u043E \"),\r\n        published,\r\n        \" \\u043D\\u0430\\u0437\\u0430\\u0434\"));\r\n}\r\nexports.CreatedAt = CreatedAt;\r\n\n\n//# sourceURL=webpack://react-training/./src/shared/CardsList/Card/TextContent/CreatedAt/CreatedAt.tsx?");
-
-/***/ }),
-
-/***/ "./src/shared/CardsList/Card/TextContent/CreatedAt/index.ts":
-/*!******************************************************************!*\
-  !*** ./src/shared/CardsList/Card/TextContent/CreatedAt/index.ts ***!
-  \******************************************************************/
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
-
-eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\r\n}) : (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    o[k2] = m[k];\r\n}));\r\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\r\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\n__exportStar(__webpack_require__(/*! ./CreatedAt */ \"./src/shared/CardsList/Card/TextContent/CreatedAt/CreatedAt.tsx\"), exports);\r\n\n\n//# sourceURL=webpack://react-training/./src/shared/CardsList/Card/TextContent/CreatedAt/index.ts?");
-
-/***/ }),
-
 /***/ "./src/shared/CardsList/Card/TextContent/TextContent.tsx":
 /*!***************************************************************!*\
   !*** ./src/shared/CardsList/Card/TextContent/TextContent.tsx ***!
   \***************************************************************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
-eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\r\n}) : (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    o[k2] = m[k];\r\n}));\r\nvar __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {\r\n    Object.defineProperty(o, \"default\", { enumerable: true, value: v });\r\n}) : function(o, v) {\r\n    o[\"default\"] = v;\r\n});\r\nvar __importStar = (this && this.__importStar) || function (mod) {\r\n    if (mod && mod.__esModule) return mod;\r\n    var result = {};\r\n    if (mod != null) for (var k in mod) if (k !== \"default\" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);\r\n    __setModuleDefault(result, mod);\r\n    return result;\r\n};\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nexports.TextContent = void 0;\r\nvar react_1 = __importStar(__webpack_require__(/*! react */ \"react\"));\r\nvar Post_1 = __webpack_require__(/*! ../../../Post */ \"./src/shared/Post/index.ts\");\r\nvar CreatedAt_1 = __webpack_require__(/*! ./CreatedAt */ \"./src/shared/CardsList/Card/TextContent/CreatedAt/index.ts\");\r\nvar textcontent_css_1 = __importDefault(__webpack_require__(/*! ./textcontent.css */ \"./src/shared/CardsList/Card/TextContent/textcontent.css\"));\r\nfunction TextContent(props) {\r\n    var link = props.link, title = props.title, published = props.published, authorName = props.authorName, authorAvatarSrc = props.authorAvatarSrc;\r\n    var _a = react_1.useState(false), isModalOpened = _a[0], setIsModalOpened = _a[1];\r\n    return (react_1.default.createElement(\"div\", { className: textcontent_css_1.default.textContent },\r\n        react_1.default.createElement(\"div\", { className: textcontent_css_1.default.metaData },\r\n            react_1.default.createElement(\"div\", { className: textcontent_css_1.default.userLink },\r\n                react_1.default.createElement(\"img\", { className: textcontent_css_1.default.avatar, src: authorAvatarSrc, alt: \"avatar\" }),\r\n                react_1.default.createElement(\"a\", { className: textcontent_css_1.default.username, href: \"#user-url\" }, authorName)),\r\n            react_1.default.createElement(CreatedAt_1.CreatedAt, { published: published })),\r\n        react_1.default.createElement(\"h2\", { className: textcontent_css_1.default.title },\r\n            react_1.default.createElement(\"a\", { className: textcontent_css_1.default.postLink, href: \"#\" + link, onClick: function () {\r\n                    setIsModalOpened(true);\r\n                } }, title),\r\n            isModalOpened && (react_1.default.createElement(Post_1.Post, { onClose: function () {\r\n                    setIsModalOpened(false);\r\n                } })))));\r\n}\r\nexports.TextContent = TextContent;\r\n\n\n//# sourceURL=webpack://react-training/./src/shared/CardsList/Card/TextContent/TextContent.tsx?");
+eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\r\n}) : (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    o[k2] = m[k];\r\n}));\r\nvar __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {\r\n    Object.defineProperty(o, \"default\", { enumerable: true, value: v });\r\n}) : function(o, v) {\r\n    o[\"default\"] = v;\r\n});\r\nvar __importStar = (this && this.__importStar) || function (mod) {\r\n    if (mod && mod.__esModule) return mod;\r\n    var result = {};\r\n    if (mod != null) for (var k in mod) if (k !== \"default\" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);\r\n    __setModuleDefault(result, mod);\r\n    return result;\r\n};\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nexports.TextContent = void 0;\r\nvar react_1 = __importStar(__webpack_require__(/*! react */ \"react\"));\r\nvar Post_1 = __webpack_require__(/*! ../../../Post */ \"./src/shared/Post/index.ts\");\r\nvar CreatedAt_1 = __webpack_require__(/*! ../../../CreatedAt */ \"./src/shared/CreatedAt/index.ts\");\r\nvar textcontent_css_1 = __importDefault(__webpack_require__(/*! ./textcontent.css */ \"./src/shared/CardsList/Card/TextContent/textcontent.css\"));\r\nvar AuthorAvatar_1 = __webpack_require__(/*! ../../../AuthorLink/AuthorAvatar */ \"./src/shared/AuthorLink/AuthorAvatar/index.ts\");\r\nvar AuthorLink_1 = __webpack_require__(/*! ../../../AuthorLink */ \"./src/shared/AuthorLink/index.ts\");\r\nvar AuthorName_1 = __webpack_require__(/*! ../../../AuthorLink/AuthorName */ \"./src/shared/AuthorLink/AuthorName/index.ts\");\r\nfunction TextContent(props) {\r\n    var link = props.link, title = props.title, published = props.published, authorName = props.authorName, authorAvatarSrc = props.authorAvatarSrc;\r\n    var _a = react_1.useState(false), isModalOpened = _a[0], setIsModalOpened = _a[1];\r\n    return (react_1.default.createElement(\"div\", { className: textcontent_css_1.default.textContent },\r\n        react_1.default.createElement(\"div\", { className: textcontent_css_1.default.metaData },\r\n            react_1.default.createElement(AuthorLink_1.AuthorLink, { href: \"#user-link\" },\r\n                react_1.default.createElement(AuthorAvatar_1.AuthorAvatar, { src: authorAvatarSrc }),\r\n                react_1.default.createElement(AuthorName_1.AuthorName, { name: authorName })),\r\n            react_1.default.createElement(CreatedAt_1.CreatedAt, { labeled: true, text: published })),\r\n        react_1.default.createElement(\"h2\", { className: textcontent_css_1.default.title },\r\n            react_1.default.createElement(\"a\", { className: textcontent_css_1.default.postLink, href: \"#\" + link, onClick: function () {\r\n                    setIsModalOpened(true);\r\n                } }, title),\r\n            isModalOpened && (react_1.default.createElement(Post_1.Post, { onClose: function () {\r\n                    setIsModalOpened(false);\r\n                } })))));\r\n}\r\nexports.TextContent = TextContent;\r\n\n\n//# sourceURL=webpack://react-training/./src/shared/CardsList/Card/TextContent/TextContent.tsx?");
 
 /***/ }),
 
@@ -690,6 +760,26 @@ eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create
 
 /***/ }),
 
+/***/ "./src/shared/CreatedAt/CreatedAt.tsx":
+/*!********************************************!*\
+  !*** ./src/shared/CreatedAt/CreatedAt.tsx ***!
+  \********************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nexports.CreatedAt = void 0;\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nvar createdat_css_1 = __importDefault(__webpack_require__(/*! ./createdat.css */ \"./src/shared/CreatedAt/createdat.css\"));\r\nfunction CreatedAt(_a) {\r\n    var _b = _a.labeled, labeled = _b === void 0 ? false : _b, text = _a.text;\r\n    return (react_1.default.createElement(\"span\", { className: createdat_css_1.default.root },\r\n        labeled && react_1.default.createElement(\"span\", { className: createdat_css_1.default.publishedLabel }, \"\\u041E\\u043F\\u0443\\u0431\\u043B\\u0438\\u043A\\u043E\\u0432\\u0430\\u043D\\u043E \"),\r\n        text,\r\n        \" \\u043D\\u0430\\u0437\\u0430\\u0434\"));\r\n}\r\nexports.CreatedAt = CreatedAt;\r\n\n\n//# sourceURL=webpack://react-training/./src/shared/CreatedAt/CreatedAt.tsx?");
+
+/***/ }),
+
+/***/ "./src/shared/CreatedAt/index.ts":
+/*!***************************************!*\
+  !*** ./src/shared/CreatedAt/index.ts ***!
+  \***************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\r\n}) : (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    o[k2] = m[k];\r\n}));\r\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\r\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\n__exportStar(__webpack_require__(/*! ./CreatedAt */ \"./src/shared/CreatedAt/CreatedAt.tsx\"), exports);\r\n\n\n//# sourceURL=webpack://react-training/./src/shared/CreatedAt/index.ts?");
+
+/***/ }),
+
 /***/ "./src/shared/Dropdown/Dropdown.tsx":
 /*!******************************************!*\
   !*** ./src/shared/Dropdown/Dropdown.tsx ***!
@@ -756,7 +846,7 @@ eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create
   \***************************************************************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
-eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nexports.UserBlock = void 0;\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nvar Break_1 = __webpack_require__(/*! ../../../Break */ \"./src/shared/Break/index.ts\");\r\nvar icons_1 = __webpack_require__(/*! ../../../icons */ \"./src/shared/icons/index.ts\");\r\nvar Text_1 = __webpack_require__(/*! ../../../Text */ \"./src/shared/Text/index.ts\");\r\nvar userblock_css_1 = __importDefault(__webpack_require__(/*! ./userblock.css */ \"./src/shared/Header/SearchBlock/UserBlock/userblock.css\"));\r\nfunction UserBlock(_a) {\r\n    var avatarSrc = _a.avatarSrc, username = _a.username;\r\n    var client_id = '3pr6xGqci--_mOnIpz9ubA';\r\n    return (react_1.default.createElement(\"a\", { className: userblock_css_1.default.root, href: \"https://www.reddit.com/api/v1/authorize?client_id=\" + client_id + \"&response_type=code&state=random_string&redirect_uri=http://localhost:3000/auth&duration=permanent&scope=read identity submit\" },\r\n        react_1.default.createElement(\"div\", { className: userblock_css_1.default.avatarBox }, avatarSrc ? (react_1.default.createElement(\"img\", { src: avatarSrc, alt: \"user avatar\", className: userblock_css_1.default.avatarImage })) : (react_1.default.createElement(icons_1.IconAnon, null))),\r\n        react_1.default.createElement(\"div\", { className: userblock_css_1.default.username },\r\n            react_1.default.createElement(Break_1.Break, { size: 12 }),\r\n            react_1.default.createElement(Text_1.Text, { size: 20, color: username ? Text_1.EColors.black : Text_1.EColors.gray99 }, username || 'Аноним'))));\r\n}\r\nexports.UserBlock = UserBlock;\r\n\n\n//# sourceURL=webpack://react-training/./src/shared/Header/SearchBlock/UserBlock/UserBlock.tsx?");
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nexports.UserBlock = void 0;\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nvar Break_1 = __webpack_require__(/*! ../../../Break */ \"./src/shared/Break/index.ts\");\r\nvar icons_1 = __webpack_require__(/*! ../../../icons */ \"./src/shared/icons/index.ts\");\r\nvar InlineText_1 = __webpack_require__(/*! ../../../InlineText */ \"./src/shared/InlineText/index.ts\");\r\nvar userblock_css_1 = __importDefault(__webpack_require__(/*! ./userblock.css */ \"./src/shared/Header/SearchBlock/UserBlock/userblock.css\"));\r\nfunction UserBlock(_a) {\r\n    var avatarSrc = _a.avatarSrc, username = _a.username;\r\n    var client_id = '3pr6xGqci--_mOnIpz9ubA';\r\n    return (react_1.default.createElement(\"a\", { className: userblock_css_1.default.root, href: \"https://www.reddit.com/api/v1/authorize?client_id=\" + client_id + \"&response_type=code&state=random_string&redirect_uri=http://localhost:3000/auth&duration=permanent&scope=read identity submit\" },\r\n        react_1.default.createElement(\"div\", { className: userblock_css_1.default.avatarBox }, avatarSrc ? (react_1.default.createElement(\"img\", { src: avatarSrc, alt: \"user avatar\", className: userblock_css_1.default.avatarImage })) : (react_1.default.createElement(icons_1.IconAnon, null))),\r\n        react_1.default.createElement(\"div\", { className: userblock_css_1.default.username },\r\n            react_1.default.createElement(Break_1.Break, { size: 12 }),\r\n            react_1.default.createElement(InlineText_1.InlineText, { size: 20, color: username ? InlineText_1.EColors.black : InlineText_1.EColors.gray99 }, username || 'Аноним'))));\r\n}\r\nexports.UserBlock = UserBlock;\r\n\n\n//# sourceURL=webpack://react-training/./src/shared/Header/SearchBlock/UserBlock/UserBlock.tsx?");
 
 /***/ }),
 
@@ -850,6 +940,26 @@ eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create
 
 /***/ }),
 
+/***/ "./src/shared/InlineText/InlineText.tsx":
+/*!**********************************************!*\
+  !*** ./src/shared/InlineText/InlineText.tsx ***!
+  \**********************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nexports.InlineText = exports.EColors = void 0;\r\nvar classnames_1 = __importDefault(__webpack_require__(/*! classnames */ \"classnames\"));\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nvar inlinetext_css_1 = __importDefault(__webpack_require__(/*! ./inlinetext.css */ \"./src/shared/InlineText/inlinetext.css\"));\r\nvar EColors;\r\n(function (EColors) {\r\n    EColors[\"inherit\"] = \"inherit\";\r\n    EColors[\"black\"] = \"black\";\r\n    EColors[\"orange\"] = \"orange\";\r\n    EColors[\"green\"] = \"green\";\r\n    EColors[\"white\"] = \"white\";\r\n    EColors[\"grayF4\"] = \"grayF4\";\r\n    EColors[\"grayF3\"] = \"grayF3\";\r\n    EColors[\"grayD9\"] = \"grayD9\";\r\n    EColors[\"grayC4\"] = \"grayC4\";\r\n    EColors[\"gray99\"] = \"gray99\";\r\n    EColors[\"gray66\"] = \"gray66\";\r\n})(EColors = exports.EColors || (exports.EColors = {}));\r\nfunction InlineText(props) {\r\n    var _a, _b, _c, _d;\r\n    var _e = props.As, As = _e === void 0 ? 'span' : _e, _f = props.color, color = _f === void 0 ? EColors.inherit : _f, _g = props.bold, bold = _g === void 0 ? false : _g, children = props.children, size = props.size, mobileSize = props.mobileSize, tabletSize = props.tabletSize, desktopSize = props.desktopSize;\r\n    var classes = classnames_1.default(inlinetext_css_1.default[\"s\" + size], inlinetext_css_1.default[color], (_a = {}, _a[inlinetext_css_1.default.bold] = bold, _a), (_b = {}, _b[inlinetext_css_1.default[\"m\" + mobileSize]] = mobileSize, _b), (_c = {}, _c[inlinetext_css_1.default[\"t\" + tabletSize]] = tabletSize, _c), (_d = {}, _d[inlinetext_css_1.default[\"d\" + desktopSize]] = desktopSize, _d));\r\n    return react_1.default.createElement(As, { className: classes }, children);\r\n}\r\nexports.InlineText = InlineText;\r\n\n\n//# sourceURL=webpack://react-training/./src/shared/InlineText/InlineText.tsx?");
+
+/***/ }),
+
+/***/ "./src/shared/InlineText/index.ts":
+/*!****************************************!*\
+  !*** ./src/shared/InlineText/index.ts ***!
+  \****************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\r\n}) : (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    o[k2] = m[k];\r\n}));\r\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\r\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\n__exportStar(__webpack_require__(/*! ./InlineText */ \"./src/shared/InlineText/InlineText.tsx\"), exports);\r\n\n\n//# sourceURL=webpack://react-training/./src/shared/InlineText/index.ts?");
+
+/***/ }),
+
 /***/ "./src/shared/Layout/Layout.tsx":
 /*!**************************************!*\
   !*** ./src/shared/Layout/Layout.tsx ***!
@@ -876,27 +986,7 @@ eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create
   \******************************************************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
-eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nexports.Comment = void 0;\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nvar Controls_1 = __webpack_require__(/*! ./Controls */ \"./src/shared/Post/Comments/Comment/Controls/index.ts\");\r\nvar Header_1 = __webpack_require__(/*! ./Header */ \"./src/shared/Post/Comments/Comment/Header/index.ts\");\r\nfunction Comment() {\r\n    return (react_1.default.createElement(\"div\", null,\r\n        react_1.default.createElement(Header_1.Header, null),\r\n        \"\\u0422\\u0435\\u043A\\u0441\\u0442 \\u043A\\u043E\\u043C\\u043C\\u0435\\u043D\\u0442\\u0430\\u0440\\u0438\\u044F\",\r\n        react_1.default.createElement(Controls_1.Controls, null)));\r\n}\r\nexports.Comment = Comment;\r\n\n\n//# sourceURL=webpack://react-training/./src/shared/Post/Comments/Comment/Comment.tsx?");
-
-/***/ }),
-
-/***/ "./src/shared/Post/Comments/Comment/Controls/Controls.tsx":
-/*!****************************************************************!*\
-  !*** ./src/shared/Post/Comments/Comment/Controls/Controls.tsx ***!
-  \****************************************************************/
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
-
-eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nexports.Controls = void 0;\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nfunction Controls() {\r\n    return (react_1.default.createElement(\"div\", null, \"Controls\"));\r\n}\r\nexports.Controls = Controls;\r\n\n\n//# sourceURL=webpack://react-training/./src/shared/Post/Comments/Comment/Controls/Controls.tsx?");
-
-/***/ }),
-
-/***/ "./src/shared/Post/Comments/Comment/Controls/index.ts":
-/*!************************************************************!*\
-  !*** ./src/shared/Post/Comments/Comment/Controls/index.ts ***!
-  \************************************************************/
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
-
-eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\r\n}) : (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    o[k2] = m[k];\r\n}));\r\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\r\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\n__exportStar(__webpack_require__(/*! ./Controls */ \"./src/shared/Post/Comments/Comment/Controls/Controls.tsx\"), exports);\r\n\n\n//# sourceURL=webpack://react-training/./src/shared/Post/Comments/Comment/Controls/index.ts?");
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nexports.Comment = void 0;\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nvar KarmaCounter_1 = __webpack_require__(/*! ./KarmaCounter */ \"./src/shared/Post/Comments/Comment/KarmaCounter/index.ts\");\r\nvar comment_css_1 = __importDefault(__webpack_require__(/*! ./comment.css */ \"./src/shared/Post/Comments/Comment/comment.css\"));\r\nvar Header_1 = __webpack_require__(/*! ./Header */ \"./src/shared/Post/Comments/Comment/Header/index.ts\");\r\nvar icons_1 = __webpack_require__(/*! ../../../icons */ \"./src/shared/icons/index.ts\");\r\nfunction Comment(_a) {\r\n    var children = _a.children;\r\n    return (react_1.default.createElement(\"div\", { className: comment_css_1.default.root },\r\n        react_1.default.createElement(\"div\", { className: comment_css_1.default.aside },\r\n            react_1.default.createElement(\"div\", { className: comment_css_1.default.asideKarmaCounter },\r\n                react_1.default.createElement(KarmaCounter_1.KarmaCounter, { score: 103, direction: KarmaCounter_1.EDirection.column })),\r\n            react_1.default.createElement(\"span\", { className: comment_css_1.default.indent })),\r\n        react_1.default.createElement(\"div\", { className: comment_css_1.default.content },\r\n            react_1.default.createElement(\"div\", { className: comment_css_1.default.header },\r\n                react_1.default.createElement(Header_1.Header, null)),\r\n            react_1.default.createElement(\"p\", { className: comment_css_1.default.text }, \"\\u041A\\u0430\\u043A \\u0443\\u0436\\u0435 \\u043D\\u0435\\u043E\\u0434\\u043D\\u043E\\u043A\\u0440\\u0430\\u0442\\u043D\\u043E \\u0443\\u043F\\u043E\\u043C\\u044F\\u043D\\u0443\\u0442\\u043E, \\u0441\\u0442\\u0440\\u0435\\u043C\\u044F\\u0449\\u0438\\u0435\\u0441\\u044F \\u0432\\u044B\\u0442\\u0435\\u0441\\u043D\\u0438\\u0442\\u044C \\u0442\\u0440\\u0430\\u0434\\u0438\\u0446\\u0438\\u043E\\u043D\\u043D\\u043E\\u0435 \\u043F\\u0440\\u043E\\u0438\\u0437\\u0432\\u043E\\u0434\\u0441\\u0442\\u0432\\u043E, \\u043D\\u0430\\u043D\\u043E\\u0442\\u0435\\u0445\\u043D\\u043E\\u043B\\u043E\\u0433\\u0438\\u0438 \\u043F\\u043E\\u0434\\u0432\\u0435\\u0440\\u0433\\u043D\\u0443\\u0442\\u044B \\u0446\\u0435\\u043B\\u043E\\u0439 \\u0441\\u0435\\u0440\\u0438\\u0438 \\u043D\\u0435\\u0437\\u0430\\u0432\\u0438\\u0441\\u0438\\u043C\\u044B\\u0445 \\u0438\\u0441\\u0441\\u043B\\u0435\\u0434\\u043E\\u0432\\u0430\\u043D\\u0438\\u0439. \\u0412 \\u0441\\u0432\\u043E\\u0451\\u043C \\u0441\\u0442\\u0440\\u0435\\u043C\\u043B\\u0435\\u043D\\u0438\\u0438 \\u043F\\u043E\\u0432\\u044B\\u0441\\u0438\\u0442\\u044C \\u043A\\u0430\\u0447\\u0435\\u0441\\u0442\\u0432\\u043E \\u0436\\u0438\\u0437\\u043D\\u0438, \\u043E\\u043D\\u0438 \\u0437\\u0430\\u0431\\u044B\\u0432\\u0430\\u044E\\u0442, \\u0447\\u0442\\u043E \\u0434\\u0430\\u043B\\u044C\\u043D\\u0435\\u0439\\u0448\\u0435\\u0435 \\u0440\\u0430\\u0437\\u0432\\u0438\\u0442\\u0438\\u0435 \\u0440\\u0430\\u0437\\u043B\\u0438\\u0447\\u043D\\u044B\\u0445 \\u0444\\u043E\\u0440\\u043C \\u0434\\u0435\\u044F\\u0442\\u0435\\u043B\\u044C\\u043D\\u043E\\u0441\\u0442\\u0438 \\u0432\\u044B\\u044F\\u0432\\u043B\\u044F\\u0435\\u0442 \\u0441\\u0440\\u043E\\u0447\\u043D\\u0443\\u044E \\u043F\\u043E\\u0442\\u0440\\u0435\\u0431\\u043D\\u043E\\u0441\\u0442\\u044C \\u043D\\u0430\\u043F\\u0440\\u0430\\u0432\\u043B\\u0435\\u043D\\u0438\\u0439 \\u043F\\u0440\\u043E\\u0433\\u0440\\u0435\\u0441\\u0441\\u0438\\u0432\\u043D\\u043E\\u0433\\u043E \\u0440\\u0430\\u0437\\u0432\\u0438\\u0442\\u0438\\u044F.\"),\r\n            react_1.default.createElement(\"div\", { className: comment_css_1.default.controls },\r\n                react_1.default.createElement(\"div\", { className: comment_css_1.default.controlsKarmaCounter },\r\n                    react_1.default.createElement(KarmaCounter_1.KarmaCounter, { score: 103 })),\r\n                react_1.default.createElement(\"button\", { className: comment_css_1.default.answerButton },\r\n                    react_1.default.createElement(\"span\", { className: comment_css_1.default.answerIcon },\r\n                        react_1.default.createElement(icons_1.IconComments, { width: \"14px\" })),\r\n                    \"\\u041E\\u0442\\u0432\\u0435\\u0442\\u0438\\u0442\\u044C\"),\r\n                react_1.default.createElement(\"div\", { className: comment_css_1.default.actions },\r\n                    react_1.default.createElement(\"button\", { className: comment_css_1.default.actionsButton },\r\n                        react_1.default.createElement(\"span\", { className: comment_css_1.default.actionsIcon },\r\n                            react_1.default.createElement(\"span\", { className: comment_css_1.default.actionsIconShare },\r\n                                react_1.default.createElement(icons_1.IconShare, null))),\r\n                        react_1.default.createElement(\"span\", { className: comment_css_1.default.actionsLabel }, \"\\u041F\\u043E\\u0434\\u0435\\u043B\\u0438\\u0442\\u044C\\u0441\\u044F\")),\r\n                    react_1.default.createElement(\"button\", { className: comment_css_1.default.actionsButton },\r\n                        react_1.default.createElement(\"span\", { className: comment_css_1.default.actionsIcon },\r\n                            react_1.default.createElement(\"span\", { className: comment_css_1.default.actionsIconReport },\r\n                                react_1.default.createElement(icons_1.IconReport, null))),\r\n                        react_1.default.createElement(\"span\", { className: comment_css_1.default.actionsLabel }, \"\\u041F\\u043E\\u0436\\u0430\\u043B\\u043E\\u0432\\u0430\\u0442\\u044C\\u0441\\u044F\")))),\r\n            children)));\r\n}\r\nexports.Comment = Comment;\r\n\n\n//# sourceURL=webpack://react-training/./src/shared/Post/Comments/Comment/Comment.tsx?");
 
 /***/ }),
 
@@ -906,7 +996,7 @@ eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create
   \************************************************************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
-eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nexports.Header = void 0;\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nfunction Header() {\r\n    return (react_1.default.createElement(\"div\", null, \"Header\"));\r\n}\r\nexports.Header = Header;\r\n\n\n//# sourceURL=webpack://react-training/./src/shared/Post/Comments/Comment/Header/Header.tsx?");
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nexports.Header = void 0;\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nvar AuthorAvatar_1 = __webpack_require__(/*! ../../../../AuthorLink/AuthorAvatar */ \"./src/shared/AuthorLink/AuthorAvatar/index.ts\");\r\nvar AuthorName_1 = __webpack_require__(/*! ../../../../AuthorLink/AuthorName */ \"./src/shared/AuthorLink/AuthorName/index.ts\");\r\nvar AuthorLink_1 = __webpack_require__(/*! ../../../../AuthorLink */ \"./src/shared/AuthorLink/index.ts\");\r\nvar header_css_1 = __importDefault(__webpack_require__(/*! ./header.css */ \"./src/shared/Post/Comments/Comment/Header/header.css\"));\r\nvar CreatedAt_1 = __webpack_require__(/*! ../../../../CreatedAt */ \"./src/shared/CreatedAt/index.ts\");\r\nfunction Header() {\r\n    return (react_1.default.createElement(\"div\", { className: header_css_1.default.root },\r\n        react_1.default.createElement(\"span\", { className: header_css_1.default.label }, \"\\u041B\\u0438\\u0433\\u0430 \\u043F\\u0440\\u043E\\u0433\\u0440\\u0430\\u043C\\u043C\\u0438\\u0441\\u0442\\u043E\\u0432\"),\r\n        react_1.default.createElement(\"div\", { className: header_css_1.default.metaData },\r\n            react_1.default.createElement(AuthorLink_1.AuthorLink, { href: \"#user-link\" },\r\n                react_1.default.createElement(AuthorAvatar_1.AuthorAvatar, null),\r\n                react_1.default.createElement(AuthorName_1.AuthorName, { name: \"\\u0421\\u0435\\u0440\\u0433\\u0435\\u0439 \\u041C\\u0430\\u0440\\u0433\\u0443\\u043B\\u0438\\u0441\" })),\r\n            react_1.default.createElement(CreatedAt_1.CreatedAt, { text: \"3 \\u0447\\u0430\\u0441\\u0430\" }))));\r\n}\r\nexports.Header = Header;\r\n\n\n//# sourceURL=webpack://react-training/./src/shared/Post/Comments/Comment/Header/Header.tsx?");
 
 /***/ }),
 
@@ -917,6 +1007,26 @@ eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod)
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\r\n}) : (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    o[k2] = m[k];\r\n}));\r\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\r\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\n__exportStar(__webpack_require__(/*! ./Header */ \"./src/shared/Post/Comments/Comment/Header/Header.tsx\"), exports);\r\n\n\n//# sourceURL=webpack://react-training/./src/shared/Post/Comments/Comment/Header/index.ts?");
+
+/***/ }),
+
+/***/ "./src/shared/Post/Comments/Comment/KarmaCounter/KarmaCounter.tsx":
+/*!************************************************************************!*\
+  !*** ./src/shared/Post/Comments/Comment/KarmaCounter/KarmaCounter.tsx ***!
+  \************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nexports.KarmaCounter = exports.EDirection = void 0;\r\nvar classnames_1 = __importDefault(__webpack_require__(/*! classnames */ \"classnames\"));\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nvar karmacounter_css_1 = __importDefault(__webpack_require__(/*! ./karmacounter.css */ \"./src/shared/Post/Comments/Comment/KarmaCounter/karmacounter.css\"));\r\nvar EDirection;\r\n(function (EDirection) {\r\n    EDirection[\"row\"] = \"Row\";\r\n    EDirection[\"column\"] = \"Column\";\r\n})(EDirection = exports.EDirection || (exports.EDirection = {}));\r\nfunction KarmaCounter(props) {\r\n    var _a, _b, _c;\r\n    var score = props.score, _d = props.direction, direction = _d === void 0 ? 'row' : _d, mobileDirection = props.mobileDirection, tabletDirection = props.tabletDirection, desktopDirection = props.desktopDirection;\r\n    var classes = classnames_1.default(karmacounter_css_1.default.root, karmacounter_css_1.default[\"s\" + direction], (_a = {}, _a[karmacounter_css_1.default[\"m\" + mobileDirection]] = mobileDirection, _a), (_b = {}, _b[karmacounter_css_1.default[\"t\" + tabletDirection]] = tabletDirection, _b), (_c = {}, _c[karmacounter_css_1.default[\"d\" + desktopDirection]] = desktopDirection, _c));\r\n    return (react_1.default.createElement(\"div\", { className: classes },\r\n        react_1.default.createElement(\"button\", { className: karmacounter_css_1.default.karmaUp },\r\n            react_1.default.createElement(\"svg\", { width: \"19\", height: \"10\", viewBox: \"0 0 19 10\", fill: \"none\", xmlns: \"http://www.w3.org/2000/svg\" },\r\n                react_1.default.createElement(\"path\", { d: \"M9.5 0L0 10H19L9.5 0Z\", fill: \"#C4C4C4\" }))),\r\n        react_1.default.createElement(\"span\", { className: karmacounter_css_1.default.karmaValue }, score),\r\n        react_1.default.createElement(\"button\", { className: karmacounter_css_1.default.karmaDown },\r\n            react_1.default.createElement(\"svg\", { width: \"19\", height: \"10\", viewBox: \"0 0 19 10\", fill: \"none\", xmlns: \"http://www.w3.org/2000/svg\" },\r\n                react_1.default.createElement(\"path\", { d: \"M9.5 10L19 0L8.74228e-07 -1.66103e-06L9.5 10Z\", fill: \"#C4C4C4\" })))));\r\n}\r\nexports.KarmaCounter = KarmaCounter;\r\n\n\n//# sourceURL=webpack://react-training/./src/shared/Post/Comments/Comment/KarmaCounter/KarmaCounter.tsx?");
+
+/***/ }),
+
+/***/ "./src/shared/Post/Comments/Comment/KarmaCounter/index.ts":
+/*!****************************************************************!*\
+  !*** ./src/shared/Post/Comments/Comment/KarmaCounter/index.ts ***!
+  \****************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\r\n}) : (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    o[k2] = m[k];\r\n}));\r\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\r\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\n__exportStar(__webpack_require__(/*! ./KarmaCounter */ \"./src/shared/Post/Comments/Comment/KarmaCounter/KarmaCounter.tsx\"), exports);\r\n\n\n//# sourceURL=webpack://react-training/./src/shared/Post/Comments/Comment/KarmaCounter/index.ts?");
 
 /***/ }),
 
@@ -936,7 +1046,7 @@ eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create
   \***********************************************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
-eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nexports.Comments = void 0;\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nvar CommentForm_1 = __webpack_require__(/*! ../../CommentForm */ \"./src/shared/CommentForm/index.ts\");\r\nvar Comment_1 = __webpack_require__(/*! ./Comment */ \"./src/shared/Post/Comments/Comment/index.ts\");\r\nvar comments_css_1 = __importDefault(__webpack_require__(/*! ./comments.css */ \"./src/shared/Post/Comments/comments.css\"));\r\nvar Sorting_1 = __webpack_require__(/*! ./Sorting */ \"./src/shared/Post/Comments/Sorting/index.ts\");\r\nfunction Comments() {\r\n    return (react_1.default.createElement(\"div\", { className: comments_css_1.default.root },\r\n        react_1.default.createElement(\"div\", { className: comments_css_1.default.sorting },\r\n            react_1.default.createElement(Sorting_1.Sorting, null)),\r\n        react_1.default.createElement(\"div\", { className: comments_css_1.default.commentForm },\r\n            react_1.default.createElement(CommentForm_1.CommentForm, null)),\r\n        react_1.default.createElement(Comment_1.Comment, null)));\r\n}\r\nexports.Comments = Comments;\r\n\n\n//# sourceURL=webpack://react-training/./src/shared/Post/Comments/Comments.tsx?");
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nexports.Comments = void 0;\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nvar CommentForm_1 = __webpack_require__(/*! ../../CommentForm */ \"./src/shared/CommentForm/index.ts\");\r\nvar Comment_1 = __webpack_require__(/*! ./Comment */ \"./src/shared/Post/Comments/Comment/index.ts\");\r\nvar comments_css_1 = __importDefault(__webpack_require__(/*! ./comments.css */ \"./src/shared/Post/Comments/comments.css\"));\r\nvar Sorting_1 = __webpack_require__(/*! ./Sorting */ \"./src/shared/Post/Comments/Sorting/index.ts\");\r\nfunction Comments() {\r\n    return (react_1.default.createElement(\"div\", { className: comments_css_1.default.root },\r\n        react_1.default.createElement(\"div\", { className: comments_css_1.default.sorting },\r\n            react_1.default.createElement(Sorting_1.Sorting, null)),\r\n        react_1.default.createElement(\"div\", { className: comments_css_1.default.commentForm },\r\n            react_1.default.createElement(CommentForm_1.CommentForm, null)),\r\n        react_1.default.createElement(Comment_1.Comment, null,\r\n            react_1.default.createElement(Comment_1.Comment, null),\r\n            react_1.default.createElement(Comment_1.Comment, null,\r\n                react_1.default.createElement(Comment_1.Comment, null),\r\n                react_1.default.createElement(Comment_1.Comment, null)),\r\n            react_1.default.createElement(Comment_1.Comment, null))));\r\n}\r\nexports.Comments = Comments;\r\n\n\n//# sourceURL=webpack://react-training/./src/shared/Post/Comments/Comments.tsx?");
 
 /***/ }),
 
@@ -987,26 +1097,6 @@ eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\r\n}) : (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    o[k2] = m[k];\r\n}));\r\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\r\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\n__exportStar(__webpack_require__(/*! ./Post */ \"./src/shared/Post/Post.tsx\"), exports);\r\n\n\n//# sourceURL=webpack://react-training/./src/shared/Post/index.ts?");
-
-/***/ }),
-
-/***/ "./src/shared/Text/Text.tsx":
-/*!**********************************!*\
-  !*** ./src/shared/Text/Text.tsx ***!
-  \**********************************/
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
-
-eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nexports.Text = exports.EColors = void 0;\r\nvar classnames_1 = __importDefault(__webpack_require__(/*! classnames */ \"classnames\"));\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nvar text_css_1 = __importDefault(__webpack_require__(/*! ./text.css */ \"./src/shared/Text/text.css\"));\r\nvar EColors;\r\n(function (EColors) {\r\n    EColors[\"inherit\"] = \"inherit\";\r\n    EColors[\"black\"] = \"black\";\r\n    EColors[\"orange\"] = \"orange\";\r\n    EColors[\"green\"] = \"green\";\r\n    EColors[\"white\"] = \"white\";\r\n    EColors[\"grayF4\"] = \"grayF4\";\r\n    EColors[\"grayF3\"] = \"grayF3\";\r\n    EColors[\"grayD9\"] = \"grayD9\";\r\n    EColors[\"grayC4\"] = \"grayC4\";\r\n    EColors[\"gray99\"] = \"gray99\";\r\n    EColors[\"gray66\"] = \"gray66\";\r\n})(EColors = exports.EColors || (exports.EColors = {}));\r\nfunction Text(props) {\r\n    var _a, _b, _c, _d;\r\n    var _e = props.As, As = _e === void 0 ? 'span' : _e, _f = props.color, color = _f === void 0 ? EColors.inherit : _f, _g = props.bold, bold = _g === void 0 ? false : _g, children = props.children, size = props.size, mobileSize = props.mobileSize, tabletSize = props.tabletSize, desktopSize = props.desktopSize;\r\n    var classes = classnames_1.default(text_css_1.default[\"s\" + size], text_css_1.default[color], (_a = {}, _a[text_css_1.default.bold] = bold, _a), (_b = {}, _b[text_css_1.default[\"m\" + mobileSize]] = mobileSize, _b), (_c = {}, _c[text_css_1.default[\"t\" + tabletSize]] = tabletSize, _c), (_d = {}, _d[text_css_1.default[\"d\" + desktopSize]] = desktopSize, _d));\r\n    return react_1.default.createElement(As, { className: classes }, children);\r\n}\r\nexports.Text = Text;\r\n\n\n//# sourceURL=webpack://react-training/./src/shared/Text/Text.tsx?");
-
-/***/ }),
-
-/***/ "./src/shared/Text/index.ts":
-/*!**********************************!*\
-  !*** ./src/shared/Text/index.ts ***!
-  \**********************************/
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
-
-eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\r\n}) : (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    o[k2] = m[k];\r\n}));\r\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\r\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\n__exportStar(__webpack_require__(/*! ./Text */ \"./src/shared/Text/Text.tsx\"), exports);\r\n\n\n//# sourceURL=webpack://react-training/./src/shared/Text/index.ts?");
 
 /***/ }),
 
@@ -1126,7 +1216,7 @@ eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod)
   \****************************************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
-eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nexports.IconEmoji = void 0;\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nfunction IconEmoji(props) {\r\n    var _a = props.width, width = _a === void 0 ? '100%' : _a, _b = props.height, height = _b === void 0 ? width : _b;\r\n    return (react_1.default.createElement(\"svg\", { width: width, height: height, viewBox: \"0 0 19 19\", fill: \"none\", xmlns: \"http://www.w3.org/2000/svg\" },\r\n        react_1.default.createElement(\"path\", { d: \"M18.5 9.5C18.5 14.4706 14.4706 18.5 9.5 18.5C4.52944 18.5 0.5 14.4706 0.5 9.5C0.5 4.52944 4.52944 0.5 9.5 0.5C14.4706 0.5 18.5 4.52944 18.5 9.5Z\", stroke: \"#CC6633\", \"stroke-linecap\": \"round\", \"stroke-linejoin\": \"round\" }),\r\n        react_1.default.createElement(\"path\", { d: \"M5.70001 11.4C5.70001 11.4 7.12501 13.3 9.50001 13.3C11.875 13.3 13.3 11.4 13.3 11.4\", stroke: \"#CC6633\", \"stroke-linecap\": \"round\", \"stroke-linejoin\": \"round\" }),\r\n        react_1.default.createElement(\"path\", { d: \"M6.64999 6.64954H6.65999\", stroke: \"#CC6633\", \"stroke-width\": \"2\", \"stroke-linecap\": \"round\", \"stroke-linejoin\": \"round\" }),\r\n        react_1.default.createElement(\"path\", { d: \"M12.35 6.64954H12.36\", stroke: \"#CC6633\", \"stroke-width\": \"2\", \"stroke-linecap\": \"round\", \"stroke-linejoin\": \"round\" })));\r\n}\r\nexports.IconEmoji = IconEmoji;\r\n\n\n//# sourceURL=webpack://react-training/./src/shared/icons/IconEmoji.tsx?");
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nexports.IconEmoji = void 0;\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nfunction IconEmoji(props) {\r\n    var _a = props.width, width = _a === void 0 ? '100%' : _a, _b = props.height, height = _b === void 0 ? width : _b;\r\n    return (react_1.default.createElement(\"svg\", { width: width, height: height, viewBox: \"0 0 19 19\", fill: \"none\", xmlns: \"http://www.w3.org/2000/svg\" },\r\n        react_1.default.createElement(\"path\", { d: \"M18.5 9.5C18.5 14.4706 14.4706 18.5 9.5 18.5C4.52944 18.5 0.5 14.4706 0.5 9.5C0.5 4.52944 4.52944 0.5 9.5 0.5C14.4706 0.5 18.5 4.52944 18.5 9.5Z\", stroke: \"#CC6633\", strokeLinecap: \"round\", strokeLinejoin: \"round\" }),\r\n        react_1.default.createElement(\"path\", { d: \"M5.70001 11.4C5.70001 11.4 7.12501 13.3 9.50001 13.3C11.875 13.3 13.3 11.4 13.3 11.4\", stroke: \"#CC6633\", strokeLinecap: \"round\", strokeLinejoin: \"round\" }),\r\n        react_1.default.createElement(\"path\", { d: \"M6.64999 6.64954H6.65999\", stroke: \"#CC6633\", strokeWidth: \"2\", strokeLinecap: \"round\", strokeLinejoin: \"round\" }),\r\n        react_1.default.createElement(\"path\", { d: \"M12.35 6.64954H12.36\", stroke: \"#CC6633\", strokeWidth: \"2\", strokeLinecap: \"round\", strokeLinejoin: \"round\" })));\r\n}\r\nexports.IconEmoji = IconEmoji;\r\n\n\n//# sourceURL=webpack://react-training/./src/shared/icons/IconEmoji.tsx?");
 
 /***/ }),
 
@@ -1236,7 +1326,7 @@ eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod)
   \***************************************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
-eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nexports.IconSend = void 0;\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nfunction IconSend(props) {\r\n    var _a = props.width, width = _a === void 0 ? '100%' : _a, _b = props.height, height = _b === void 0 ? width : _b;\r\n    return (react_1.default.createElement(\"svg\", { width: width, height: height, viewBox: \"0 0 9 10\", fill: \"none\", xmlns: \"http://www.w3.org/2000/svg\" },\r\n        react_1.default.createElement(\"path\", { \"fill-rule\": \"evenodd\", \"clip-rule\": \"evenodd\", d: \"M4.50001 0.560486L8.68001 4.93888L7.87405 5.70078L4.50001 2.1666L1.12597 5.70078L0.320007 4.93888L4.50001 0.560486ZM1.09064 4.919L1.10643 4.93392L4.50001 1.37927L7.89359 4.93392L7.90937 4.919L4.50001 1.34782L1.09064 4.919Z\", fill: \"white\" }),\r\n        react_1.default.createElement(\"rect\", { x: \"5.04218\", y: \"2.04486\", width: \"7.6356\", height: \"1.0842\", transform: \"rotate(90 5.04218 2.04486)\", fill: \"white\" })));\r\n}\r\nexports.IconSend = IconSend;\r\n\n\n//# sourceURL=webpack://react-training/./src/shared/icons/IconSend.tsx?");
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nexports.IconSend = void 0;\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nfunction IconSend(props) {\r\n    var _a = props.width, width = _a === void 0 ? '100%' : _a, _b = props.height, height = _b === void 0 ? width : _b;\r\n    return (react_1.default.createElement(\"svg\", { width: width, height: height, viewBox: \"0 0 9 10\", fill: \"none\", xmlns: \"http://www.w3.org/2000/svg\" },\r\n        react_1.default.createElement(\"path\", { fillRule: \"evenodd\", clipRule: \"evenodd\", d: \"M4.50001 0.560486L8.68001 4.93888L7.87405 5.70078L4.50001 2.1666L1.12597 5.70078L0.320007 4.93888L4.50001 0.560486ZM1.09064 4.919L1.10643 4.93392L4.50001 1.37927L7.89359 4.93392L7.90937 4.919L4.50001 1.34782L1.09064 4.919Z\", fill: \"white\" }),\r\n        react_1.default.createElement(\"rect\", { x: \"5.04218\", y: \"2.04486\", width: \"7.6356\", height: \"1.0842\", transform: \"rotate(90 5.04218 2.04486)\", fill: \"white\" })));\r\n}\r\nexports.IconSend = IconSend;\r\n\n\n//# sourceURL=webpack://react-training/./src/shared/icons/IconSend.tsx?");
 
 /***/ }),
 

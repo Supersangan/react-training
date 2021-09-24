@@ -17,8 +17,8 @@ export function IconSend(props: IIconProps) {
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M4.50001 0.560486L8.68001 4.93888L7.87405 5.70078L4.50001 2.1666L1.12597 5.70078L0.320007 4.93888L4.50001 0.560486ZM1.09064 4.919L1.10643 4.93392L4.50001 1.37927L7.89359 4.93392L7.90937 4.919L4.50001 1.34782L1.09064 4.919Z"
         fill="white"
       />

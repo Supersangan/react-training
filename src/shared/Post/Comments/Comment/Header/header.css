@@ -1,0 +1,34 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 16px;
+}
+
+.label {
+  padding: 4px 6px;
+  font-size: 12px;
+  line-height: 12px;
+  background: var(--grayD9);
+}
+
+.metaData {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+@media (min-width: 1024px) {
+  .root {
+    flex-direction: row-reverse;
+    justify-content: start;
+    align-items: center;
+    gap: 7px;
+  }
+
+  .label {
+    padding: 3px 12px 3px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

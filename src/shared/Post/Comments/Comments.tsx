@@ -15,7 +15,14 @@ export function Comments() {
         <CommentForm />
       </div>
 
-      <Comment />
+      <Comment>
+        <Comment />
+        <Comment>
+          <Comment />
+          <Comment />
+        </Comment>
+        <Comment />
+      </Comment>
     </div>
   );
 }
