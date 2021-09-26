@@ -4,6 +4,7 @@ import styles from './comment.css';
 import { Header } from './Header';
 import { EIcons, Icon } from '../../../Icon';
 import { IconComments, IconReport, IconShare } from '../../../icons';
+import { AnswerButton } from './AnswerButton';
 
 interface ICommentProps {
   children?: React.ReactNode;
@@ -38,12 +39,7 @@ export function Comment({ children }: ICommentProps) {
             <KarmaCounter score={103} />
           </div>
 
-          <button className={styles.answerButton}>
-            <span className={styles.answerIcon}>
-              <IconComments width="14px" />
-            </span>
-            Ответить
-          </button>
+          <AnswerButton userName="Сергей Маргулис" />
 
           <div className={styles.actions}>
             <button className={styles.actionsButton}>

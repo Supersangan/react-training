@@ -2,35 +2,42 @@ import React, {
   ChangeEvent,
   FormEvent,
   useContext,
+  useEffect,
   useRef,
   useState,
 } from 'react';
-import { commentContext } from '../context/commentContext';
 import { EIcons, Icon } from '../Icon';
-import styles from './commentform.css';
+import styles from './answerform.css';
 
-export function CommentForm() {
-  const { value, onChange } = useContext(commentContext);
+interface IAnswerFormProps {
+  userName: string;
+}
 
-  function handleChange(event: ChangeEvent<HTMLTextAreaElement>) {
-    onChange(event.target.value);
-  }
+export function AnswerForm({ userName }: IAnswerFormProps) {
+  const ref = useRef<HTMLTextAreaElement>(null);
 
-  function handleSubmit(event: FormEvent) {
+  useEffect(() => {
+    if (!ref.current) return;
+    ref.current.focus();
+    ref.current.selectionStart = ref.current.value.length;
+    ref.current.selectionEnd = ref.current.value.length;
+  }, []);
+
+  function handleSumbit(event: FormEvent) {
     event.preventDefault();
-    console.log(value);
+    console.log(ref.current?.value);
   }
 
   return (
-    <form className={styles.form} onSubmit={handleSubmit}>
+    <form className={styles.form} onSubmit={handleSumbit}>
       <button className={styles.buttonPluse} type="button">
         <Icon name={EIcons.pluse} size={10} />
       </button>
 
       <textarea
         className={styles.input}
-        value={value}
-        onChange={handleChange}
+        defaultValue={`${userName}, `}
+        ref={ref}
       ></textarea>
 
       <div className={styles.controls}>
@@ -89,7 +96,7 @@ export function CommentForm() {
         </button>
 
         <button className={styles.buttonSubmit} type="submit">
-          <span className={styles.buttonText}>Комментировать</span>
+          <span className={styles.buttonText}>Отправить ответ</span>
           <span className={styles.buttonArrow}>
             <Icon name={EIcons.send} size={10} />
           </span>
