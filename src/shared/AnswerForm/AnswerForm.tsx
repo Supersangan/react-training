@@ -14,7 +14,13 @@ interface IAnswerFormProps {
 }
 
 export function AnswerForm({ userName }: IAnswerFormProps) {
+  const [value, setValue] = useState(`${userName}, `);
+
   const ref = useRef<HTMLTextAreaElement>(null);
+
+  function handleChange(event: React.ChangeEvent<HTMLTextAreaElement>) {
+    setValue(event.target.value);
+  }
 
   useEffect(() => {
     if (!ref.current) return;
@@ -36,7 +42,8 @@ export function AnswerForm({ userName }: IAnswerFormProps) {
 
       <textarea
         className={styles.input}
-        defaultValue={`${userName}, `}
+        value={value}
+        onChange={handleChange}
         ref={ref}
       ></textarea>
 
