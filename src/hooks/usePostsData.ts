@@ -1,6 +1,7 @@
 import axios from 'axios';
-import { useContext, useEffect, useState } from 'react';
-import { tokenContext } from '../shared/context/tokenContext';
+import { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
+import { RootState } from '../store';
 
 interface IPostData {
   authorName: string;
@@ -18,7 +19,7 @@ interface IPostsData {
 
 export function usePostsData() {
   const [data, setData] = useState<IPostsData>({});
-  const token = useContext(tokenContext);
+  const token = useSelector<RootState, string>((state) => state.token);
 
   useEffect(() => {
     axios
@@ -33,7 +34,10 @@ export function usePostsData() {
             link: post.data.permalink,
             previewSrc:
               post.data.preview !== undefined
-                ? post.data.preview.images[0].source.url.replaceAll('&amp;', '&')
+                ? post.data.preview.images[0].source.url.replaceAll(
+                    '&amp;',
+                    '&'
+                  )
                 : null,
             score: post.data.score,
             title: post.data.title,
