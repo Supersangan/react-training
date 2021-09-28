@@ -1,28 +1,16 @@
-import React, {
-  ChangeEvent,
-  FormEvent,
-  useContext,
-  useRef,
-  useState,
-} from 'react';
-import { commentContext } from '../context/commentContext';
+import React, { ChangeEvent, FormEvent } from 'react';
 import { EIcons, Icon } from '../Icon';
 import styles from './commentform.css';
 
-export function CommentForm() {
-  const { value, onChange } = useContext(commentContext);
+interface ICommentFormProps {
+  value: string;
+  onChange: (event: ChangeEvent<HTMLTextAreaElement>) => void;
+  onSubmit: (event: FormEvent<HTMLFormElement>) => void;
+}
 
-  function handleChange(event: ChangeEvent<HTMLTextAreaElement>) {
-    onChange(event.target.value);
-  }
-
-  function handleSubmit(event: FormEvent) {
-    event.preventDefault();
-    console.log(value);
-  }
-
+export function CommentForm({ value, onChange, onSubmit }: ICommentFormProps) {
   return (
-    <form className={styles.form} onSubmit={handleSubmit}>
+    <form className={styles.form} onSubmit={onSubmit}>
       <button className={styles.buttonPluse} type="button">
         <Icon name={EIcons.pluse} size={10} />
       </button>
@@ -30,7 +18,7 @@ export function CommentForm() {
       <textarea
         className={styles.input}
         value={value}
-        onChange={handleChange}
+        onChange={onChange}
       ></textarea>
 
       <div className={styles.controls}>

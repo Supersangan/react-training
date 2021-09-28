@@ -1,5 +1,5 @@
 import React from 'react';
-import { CommentForm } from '../../CommentForm';
+import { CommentFormContainer } from '../../CommentFormContainer/CommentFormContainer';
 import { Comment } from './Comment';
 import styles from './comments.css';
 import { Sorting } from './Sorting';
@@ -12,7 +12,7 @@ export function Comments() {
       </div>
 
       <div className={styles.commentForm}>
-        <CommentForm />
+        <CommentFormContainer />
       </div>
 
       <Comment>

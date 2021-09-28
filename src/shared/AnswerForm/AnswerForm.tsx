@@ -1,12 +1,5 @@
-import React, {
-  ChangeEvent,
-  FormEvent,
-  useContext,
-  useEffect,
-  useRef,
-  useState,
-} from 'react';
-import { EIcons, Icon } from '../Icon';
+import React, { FormEvent, useEffect, useRef } from 'react';
+import { EIcons, Icon } from '../Icon/Icon';
 import styles from './answerform.css';
 
 interface IAnswerFormProps {
