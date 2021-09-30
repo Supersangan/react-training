@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './main.global.css';
 import { hot } from 'react-hot-loader/root';
 import { Header } from './shared/Header';
@@ -7,17 +7,19 @@ import { Layout } from './shared/Layout';
 import { CardsList } from './shared/CardsList';
 import { UserContextProvider } from './shared/context/userContext';
 import { PostsContextProvider } from './shared/context/postsContext';
-
-import { createStore } from 'redux';
+import { applyMiddleware, createStore } from 'redux';
 import { Provider } from 'react-redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
-import { rootReducer } from './store';
+import { rootReducer } from './store/reducer';
 import { Token } from './shared/Token';
+import thunk from 'redux-thunk';
 
+const store = createStore(
+  rootReducer,
+  composeWithDevTools(applyMiddleware(thunk))
+);
 
 function AppComponent() {
-  const store = createStore(rootReducer, composeWithDevTools());
-  
   return (
     <Provider store={store}>
       <Token />
@@ -36,7 +38,3 @@ function AppComponent() {
 }
 
 export const App = hot(() => <AppComponent />);
-function dispatch() {
-  throw new Error('Function not implemented.');
-}
-

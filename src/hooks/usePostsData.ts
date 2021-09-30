@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
-import { RootState } from '../store';
+import { TRootState } from '../store/reducer';
 
 interface IPostData {
   authorName: string;
@@ -19,14 +19,18 @@ interface IPostsData {
 
 export function usePostsData() {
   const [data, setData] = useState<IPostsData>({});
-  const token = useSelector<RootState, string>((state) => state.token);
+  const token = useSelector<TRootState, string>((state) => state.token);
 
   useEffect(() => {
+    if (token === 'undefined') return;
+
     axios
       .get('https://oauth.reddit.com/best?limit=10', {
         headers: { Authorization: `bearer ${token}` },
       })
       .then((resp) => {
+        if (resp.data.kind != 'Listing') return;
+
         const posts = resp.data.data.children.map((post: any) => {
           return <IPostData>{
             authorName: post.data.author,

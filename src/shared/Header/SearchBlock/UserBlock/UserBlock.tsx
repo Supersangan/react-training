@@ -7,11 +7,12 @@ import styles from './userblock.css';
 interface IUserBlockProps {
   avatarSrc?: string;
   username?: string;
+  loading?: boolean;
 }
 
-export function UserBlock({ avatarSrc, username }: IUserBlockProps) {
+export function UserBlock({ avatarSrc, username, loading }: IUserBlockProps) {
   const client_id = process.env.CLIENT_ID;
-  
+
   return (
     <a
       className={styles.root}
@@ -31,9 +32,18 @@ export function UserBlock({ avatarSrc, username }: IUserBlockProps) {
 
       <div className={styles.username}>
         <Break size={12} />
-        <InlineText size={20} color={username ? EColors.black : EColors.gray99}>
-          {username || 'Аноним'}
-        </InlineText>
+        {loading ? (
+          <InlineText size={20} color={EColors.gray99}>
+            Загрузка...
+          </InlineText>
+        ) : (
+          <InlineText
+            size={20}
+            color={username ? EColors.black : EColors.gray99}
+          >
+            {username || 'Аноним'}
+          </InlineText>
+        )}
       </div>
     </a>
   );
