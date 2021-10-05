@@ -1,88 +1,132 @@
-import React, { ChangeEvent, FormEvent } from 'react';
+import { Formik, useFormikContext } from 'formik';
+import React, { ChangeEvent, FormEvent, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { TRootState, updateComment } from '../../store/reducer';
 import { EIcons, Icon } from '../Icon';
 import styles from './commentform.css';
 
-interface ICommentFormProps {
-  value: string;
-  onChange: (event: ChangeEvent<HTMLTextAreaElement>) => void;
-  onSubmit: (event: FormEvent<HTMLFormElement>) => void;
+
+interface ICommentFormValues {
+  comment: string;
 }
 
-export function CommentForm({ value, onChange, onSubmit }: ICommentFormProps) {
+export function CommentForm() {
+  const commentInitialvalue = useSelector<TRootState, string>((state) => state.commentText);
+  const dispatch = useDispatch();
+
+  const initialValues: ICommentFormValues = {
+    comment: commentInitialvalue,
+  };
+
+  const SaveFormStateToRedux = () => {
+    const { values } = useFormikContext<ICommentFormValues>();
+
+    React.useEffect(() => {
+      dispatch(updateComment(values.comment));
+      console.log(values.comment);
+      
+    }, [values]);
+    return null;
+  };
+
   return (
-    <form className={styles.form} onSubmit={onSubmit}>
-      <button className={styles.buttonPluse} type="button">
-        <Icon name={EIcons.pluse} size={10} />
-      </button>
-
-      <textarea
-        className={styles.input}
-        value={value}
-        onChange={onChange}
-      ></textarea>
-
-      <div className={styles.controls}>
-        <div className={styles.controlsButtons}>
-          <button className={styles.controlsButton} type="button">
-            <Icon name={EIcons.code} />
+    <Formik
+      initialValues={initialValues}
+      onSubmit={async (values) => {
+        await new Promise((response) => setTimeout(response, 500));
+        alert(JSON.stringify(values));
+      }}
+    >
+      {({
+        values,
+        errors,
+        touched,
+        handleChange,
+        handleSubmit,
+        isSubmitting,
+      }) => (
+        <form className={styles.form} onSubmit={handleSubmit}>
+          <button className={styles.buttonPluse} type="button">
+            <Icon name={EIcons.pluse} size={10} />
           </button>
 
-          <button className={styles.controlsButton} type="button">
-            <Icon name={EIcons.image} />
-          </button>
+          <textarea
+            className={styles.input}
+            name="comment"
+            defaultValue={values.comment}
+            onChange={handleChange}
+          ></textarea>
+          {errors.comment && touched.comment && errors.comment}
 
-          <button className={styles.controlsButton} type="button">
-            <Icon name={EIcons.document} />
-          </button>
+          <div className={styles.controls}>
+            <div className={styles.controlsButtons}>
+              <button className={styles.controlsButton} type="button">
+                <Icon name={EIcons.code} />
+              </button>
 
-          <button className={styles.controlsButton} type="button">
-            <Icon name={EIcons.download} />
-          </button>
+              <button className={styles.controlsButton} type="button">
+                <Icon name={EIcons.image} />
+              </button>
 
-          <button className={styles.controlsButton} type="button">
-            <Icon name={EIcons.user} />
-          </button>
+              <button className={styles.controlsButton} type="button">
+                <Icon name={EIcons.document} />
+              </button>
 
-          <button className={styles.controlsButton} type="button">
-            <Icon name={EIcons.refresh} />
-          </button>
+              <button className={styles.controlsButton} type="button">
+                <Icon name={EIcons.download} />
+              </button>
 
-          <button className={styles.controlsButton} type="button">
-            <Icon name={EIcons.link} />
-          </button>
+              <button className={styles.controlsButton} type="button">
+                <Icon name={EIcons.user} />
+              </button>
 
-          <button className={styles.controlsButton} type="button">
-            <Icon name={EIcons.voice} />
-          </button>
+              <button className={styles.controlsButton} type="button">
+                <Icon name={EIcons.refresh} />
+              </button>
 
-          <button className={styles.controlsButton} type="button">
-            <Icon name={EIcons.answer} />
-          </button>
+              <button className={styles.controlsButton} type="button">
+                <Icon name={EIcons.link} />
+              </button>
 
-          <button className={styles.controlsButton} type="button">
-            <Icon name={EIcons.pencil} />
-          </button>
+              <button className={styles.controlsButton} type="button">
+                <Icon name={EIcons.voice} />
+              </button>
 
-          <button className={styles.controlsButton} type="button">
-            <Icon name={EIcons.a} />
-          </button>
+              <button className={styles.controlsButton} type="button">
+                <Icon name={EIcons.answer} />
+              </button>
 
-          <button className={styles.controlsButton} type="button">
-            <Icon name={EIcons.pdf} />
-          </button>
-        </div>
+              <button className={styles.controlsButton} type="button">
+                <Icon name={EIcons.pencil} />
+              </button>
 
-        <button className={styles.buttonEmoji} type="button">
-          <Icon name={EIcons.emoji} size={20} />
-        </button>
+              <button className={styles.controlsButton} type="button">
+                <Icon name={EIcons.a} />
+              </button>
 
-        <button className={styles.buttonSubmit} type="submit">
-          <span className={styles.buttonText}>Комментировать</span>
-          <span className={styles.buttonArrow}>
-            <Icon name={EIcons.send} size={10} />
-          </span>
-        </button>
-      </div>
-    </form>
+              <button className={styles.controlsButton} type="button">
+                <Icon name={EIcons.pdf} />
+              </button>
+            </div>
+
+            <button className={styles.buttonEmoji} type="button">
+              <Icon name={EIcons.emoji} size={20} />
+            </button>
+
+            <button
+              className={styles.buttonSubmit}
+              type="submit"
+              disabled={isSubmitting}
+            >
+              <span className={styles.buttonText}>Комментировать</span>
+              <span className={styles.buttonArrow}>
+                <Icon name={EIcons.send} size={10} />
+              </span>
+            </button>
+          </div>
+          <SaveFormStateToRedux />
+        </form>
+      )}
+    </Formik>
   );
 }
