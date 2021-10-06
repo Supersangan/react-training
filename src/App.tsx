@@ -6,7 +6,6 @@ import { Content } from './shared/Content';
 import { Layout } from './shared/Layout';
 import { CardsList } from './shared/CardsList';
 import { UserContextProvider } from './shared/context/userContext';
-import { PostsContextProvider } from './shared/context/postsContext';
 import { applyMiddleware, createStore } from 'redux';
 import { Provider } from 'react-redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
@@ -24,14 +23,12 @@ function AppComponent() {
     <Provider store={store}>
       <Token />
       <UserContextProvider>
-        <PostsContextProvider>
-          <Layout>
-            <Header />
-            <Content>
-              <CardsList />
-            </Content>
-          </Layout>
-        </PostsContextProvider>
+        <Layout>
+          <Header />
+          <Content>
+            <CardsList />
+          </Content>
+        </Layout>
       </UserContextProvider>
     </Provider>
   );

@@ -1,20 +1,11 @@
 import React from 'react';
+import { IPostData } from '..';
 import { msToTimeBefore } from '../../../utils/js/msToTimeBefore';
 import styles from './card.css';
 import { Controls } from './Controls';
 import { Menu } from './Menu';
 import { Preview } from './Preview';
 import { TextContent } from './TextContent';
-
-interface IPostData {
-  authorName: string;
-  created: number;
-  link: string;
-  previewSrc: string | null;
-  score: number;
-  title: string;
-  authorAvatarSrc: string | null;
-}
 
 interface ICardProps {
   post: IPostData;
