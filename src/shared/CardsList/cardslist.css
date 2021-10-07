@@ -1,3 +1,19 @@
+.loadMore {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.loadMoreButton {
+  padding: 17px 50px;
+  background: var(--grayF3);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+}
+
 @media (min-width: 1024px) {
   .cardsList {
     padding: 40px 0;

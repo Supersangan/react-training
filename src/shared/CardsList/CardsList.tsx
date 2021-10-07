@@ -1,6 +1,6 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react';
-import { useSelector } from 'react-redux';
+import React, { useEffect, useRef, useState } from 'react';
+import { useSelector, useStore } from 'react-redux';
 import { TRootState } from '../../store/reducer';
 import { Card } from './Card';
 import styles from './cardslist.css';
@@ -21,21 +21,25 @@ export function CardsList() {
   const [posts, setPosts] = useState<IPostData[]>([]);
   const [loading, setLoading] = useState(true);
   const [errorLoading, setErrorLoading] = useState('');
+  const [nextAfter, setNextAfter] = useState('');
+  const [loadingsCount, setLoadingsCount] = useState(0);
+
+  const bottomOfList = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (!token) return;
-
     async function load() {
+      if (!nextAfter && loadingsCount > 0) return;
       setLoading(true);
       setErrorLoading('');
 
       try {
-        const response = await axios.get(
-          'https://oauth.reddit.com/best?limit=25',
-          {
-            headers: { Authorization: `bearer ${token}` },
-          }
-        );
+        const response = await axios.get('https://oauth.reddit.com/best/', {
+          headers: { Authorization: `bearer ${token}` },
+          params: {
+            limit: 3,
+            after: nextAfter,
+          },
+        });
 
         if (response.data.kind != 'Listing') return;
 
@@ -57,21 +61,45 @@ export function CardsList() {
           };
         });
 
-        setPosts(posts);
+        const after = response.data.data.after;
+
+        setPosts((prevPosts) => prevPosts.concat(...posts));
+        setNextAfter(after);
+
+        setLoadingsCount(loadingsCount + 1);
       } catch (error) {
-        console.log(error);
         setErrorLoading(String(error));
       }
 
       setLoading(false);
     }
 
-    load();
-  }, [token]);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting && loadingsCount < 3) {
+          load();
+        }
+      },
+      {
+        rootMargin: '10px',
+      }
+    );
+
+    if (bottomOfList.current) {
+      observer.observe(bottomOfList.current);
+    }
+
+    return () => {
+      if (bottomOfList.current) {
+        observer.unobserve(bottomOfList.current);
+      }
+    };
+  }, [token, nextAfter, loadingsCount]);
 
   return (
-    <ul className={styles.cardsList}>
-      {/* <Card
+    <>
+      <ul className={styles.cardsList}>
+        {/* <Card
         key={-1}
         post={{
           id: 123,
@@ -84,21 +112,35 @@ export function CardsList() {
           authorAvatarSrc: null,
         }}
       /> */}
-      {posts.length === 0 && !loading && !errorLoading && (
-        <div style={{ textAlign: 'center' }}>Нет ни одного поста</div>
-      )}
+        {posts.length === 0 && !loading && !errorLoading && (
+          <div style={{ textAlign: 'center' }}>Нет ни одного поста</div>
+        )}
 
-      {posts.map((post) => {
-        return <Card key={post.id} post={post} />;
-      })}
+        {posts.map((post) => {
+          return <Card key={post.id} post={post} />;
+        })}
 
-      {loading && <div style={{ textAlign: 'center' }}>Загрузка...</div>}
+        <div ref={bottomOfList} />
 
-      {errorLoading && (
-        <div role="alert" style={{ textAlign: 'center' }}>
-          {errorLoading}
+        {loading && <div style={{ textAlign: 'center' }}>Загрузка...</div>}
+
+        {errorLoading && (
+          <div role="alert" style={{ textAlign: 'center' }}>
+            {errorLoading}
+          </div>
+        )}
+      </ul>
+
+      {loadingsCount === 3 && (
+        <div className={styles.loadMore}>
+          <button
+            className={styles.loadMoreButton}
+            onClick={() => setLoadingsCount(0)}
+          >
+            Загрузить еще...
+          </button>
         </div>
       )}
-    </ul>
+    </>
   );
 }
