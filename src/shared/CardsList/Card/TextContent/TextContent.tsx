@@ -5,6 +5,7 @@ import styles from './textcontent.css';
 import { AuthorAvatar } from '../../../AuthorLink/AuthorAvatar';
 import { AuthorLink } from '../../../AuthorLink';
 import { AuthorName } from '../../../AuthorLink/AuthorName';
+import { Link } from 'react-router-dom';
 
 interface ITextContentProps {
   link: string;
@@ -16,7 +17,6 @@ interface ITextContentProps {
 
 export function TextContent(props: ITextContentProps) {
   const { link, title, published, authorName, authorAvatarSrc } = props;
-  const [isModalOpened, setIsModalOpened] = useState(false);
 
   return (
     <div className={styles.textContent}>
@@ -31,23 +31,12 @@ export function TextContent(props: ITextContentProps) {
       </div>
 
       <h2 className={styles.title}>
-        <a
+        <Link
           className={styles.postLink}
-          href={`#${link}`}
-          onClick={() => {
-            setIsModalOpened(true);
-          }}
+          to={`/posts/${link}`}
         >
           {title}
-        </a>
-
-        {isModalOpened && (
-          <Post
-            onClose={() => {
-              setIsModalOpened(false);
-            }}
-          />
-        )}
+        </Link>
       </h2>
     </div>
   );

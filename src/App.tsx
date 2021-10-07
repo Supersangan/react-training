@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './main.global.css';
 import { hot } from 'react-hot-loader/root';
 import { Header } from './shared/Header';
@@ -12,6 +12,15 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import { rootReducer } from './store/reducer';
 import { Token } from './shared/Token';
 import thunk from 'redux-thunk';
+import {
+  BrowserRouter,
+  Redirect,
+  Route,
+  StaticRouter,
+  Switch,
+} from 'react-router-dom';
+import { Post } from './shared/Post';
+import { Page404 } from './shared/Page404';
 
 const store = createStore(
   rootReducer,
@@ -19,17 +28,46 @@ const store = createStore(
 );
 
 function AppComponent() {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   return (
     <Provider store={store}>
-      <Token />
-      <UserContextProvider>
-        <Layout>
-          <Header />
-          <Content>
-            <CardsList />
-          </Content>
-        </Layout>
-      </UserContextProvider>
+      {mounted && (
+        <BrowserRouter>
+          <Switch>
+            <Redirect exact from="/" to="/posts/" />
+            <Redirect from="/auth" to="/posts/" />
+          </Switch>
+
+          <Token />
+
+          <UserContextProvider>
+            <Layout>
+              <Header />
+
+              <Content>
+                <Switch>
+                  <Route path="/posts/">
+                    <CardsList />
+
+                    <Route path="/posts/:id">
+                      <Post />
+                    </Route>
+                  </Route>
+
+                  <Route path="/*">
+                    <Page404 />
+                  </Route>
+                </Switch>
+              </Content>
+            </Layout>
+          </UserContextProvider>
+        </BrowserRouter>
+      )}
     </Provider>
   );
 }

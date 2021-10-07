@@ -1,14 +1,12 @@
 import React, { useEffect, useRef } from 'react';
 import ReactDOM from 'react-dom';
+import { useHistory } from 'react-router';
 import { Comments } from './Comments';
 import styles from './post.css';
 
-interface IPost {
-  onClose?: () => void;
-}
-
-export function Post(props: IPost) {
+export function Post() {
   const ref = useRef<HTMLDivElement>(null);
+  const history = useHistory();
 
   useEffect(() => {
     function handleClick(event: MouseEvent) {
@@ -16,7 +14,7 @@ export function Post(props: IPost) {
         event.target instanceof Node &&
         !ref.current?.contains(event.target)
       ) {
-        props.onClose?.();
+        history.push('/')
       }
     }
 

@@ -36,7 +36,8 @@ export function CardsList() {
         const response = await axios.get('https://oauth.reddit.com/best/', {
           headers: { Authorization: `bearer ${token}` },
           params: {
-            limit: 3,
+            count: 3,
+            limit: 2,
             after: nextAfter,
           },
         });
@@ -48,7 +49,7 @@ export function CardsList() {
             id: post.data.id,
             authorName: post.data.author,
             created: post.data.created,
-            link: post.data.permalink,
+            link: post.data.id,
             previewSrc:
               post.data.preview !== undefined
                 ? post.data.preview.images[0].source.url.replaceAll(
