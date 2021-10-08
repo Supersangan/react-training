@@ -38,7 +38,7 @@ export function CardsList() {
         const response = await axios.get('https://oauth.reddit.com/best/', {
           headers: { Authorization: `bearer ${token}` },
           params: {
-            limit: 100,
+            limit: 2,
             after: nextAfter,
           },
         });
