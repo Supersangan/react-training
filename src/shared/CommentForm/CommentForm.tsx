@@ -1,5 +1,5 @@
 import { Formik, useFormikContext } from 'formik';
-import React, { ChangeEvent, FormEvent, useState } from 'react';
+import React, { ChangeEvent, FormEvent, useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { TRootState, updateComment } from '../../store/reducer';
 import { EIcons, Icon } from '../Icon';
@@ -10,23 +10,26 @@ interface ICommentFormValues {
   comment: string;
 }
 
+function SaveFormStateToRedux() {
+  const { values } = useFormikContext<ICommentFormValues>();
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    if(!values) return;
+    
+    dispatch(updateComment(values.comment));
+    console.log(values.comment);
+    
+  }, [values]);
+  
+  return null;
+};
+
 export function CommentForm() {
   const commentInitialvalue = useSelector<TRootState, string>((state) => state.commentText);
-  const dispatch = useDispatch();
 
   const initialValues: ICommentFormValues = {
     comment: commentInitialvalue,
-  };
-
-  const SaveFormStateToRedux = () => {
-    const { values } = useFormikContext<ICommentFormValues>();
-
-    React.useEffect(() => {
-      dispatch(updateComment(values.comment));
-      console.log(values.comment);
-      
-    }, [values]);
-    return null;
   };
 
   return (
@@ -124,6 +127,7 @@ export function CommentForm() {
               </span>
             </button>
           </div>
+
           <SaveFormStateToRedux />
         </form>
       )}
