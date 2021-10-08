@@ -1,6 +1,6 @@
-import { Action, ActionCreator } from "redux";
-import { ThunkAction } from "redux-thunk";
-import { TRootState } from "../reducer";
+import { Action, ActionCreator } from 'redux';
+import { ThunkAction } from 'redux-thunk';
+import { TRootState } from '../reducer';
 
 export const SET_TOKEN = 'SET_TOKEN';
 export type TSetTokenAction = {
@@ -13,10 +13,13 @@ export const setToken: ActionCreator<TSetTokenAction> = (token) => ({
 });
 
 export const saveToken =
-  (): ThunkAction<void, TRootState, unknown, Action<string>> =>
-  (dispatch) => {    
-    const token = localStorage.getItem('token') || window.__token__;
-    if (token !== 'undefined') {
+  (): ThunkAction<void, TRootState, unknown, Action<string>> => (dispatch) => {
+    const token =
+      window.__token__ != 'undefined'
+        ? window.__token__
+        : localStorage.getItem('token');
+
+    if (token) {
       localStorage.setItem('token', token);
     }
 
