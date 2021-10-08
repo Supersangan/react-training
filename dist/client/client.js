@@ -4256,7 +4256,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"SET_TOKEN\": () => (/* binding */ SET_TOKEN),\n/* harmony export */   \"setToken\": () => (/* binding */ setToken),\n/* harmony export */   \"saveToken\": () => (/* binding */ saveToken)\n/* harmony export */ });\nvar SET_TOKEN = 'SET_TOKEN';\r\nvar setToken = function (token) { return ({\r\n    type: SET_TOKEN,\r\n    token: token,\r\n}); };\r\nvar saveToken = function () {\r\n    return function (dispatch) {\r\n        var token = localStorage.getItem('token') || window.__token__;\r\n        if (token !== 'undefined') {\r\n            localStorage.setItem('token', token);\r\n        }\r\n        dispatch(setToken(token));\r\n    };\r\n};\r\n\n\n//# sourceURL=webpack://react-training/./src/store/token/actions.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"SET_TOKEN\": () => (/* binding */ SET_TOKEN),\n/* harmony export */   \"setToken\": () => (/* binding */ setToken),\n/* harmony export */   \"saveToken\": () => (/* binding */ saveToken)\n/* harmony export */ });\nvar SET_TOKEN = 'SET_TOKEN';\r\nvar setToken = function (token) { return ({\r\n    type: SET_TOKEN,\r\n    token: token,\r\n}); };\r\nvar saveToken = function () {\r\n    return function (dispatch) {\r\n        var token = window.__token__ != 'undefined' ? window.__token__ : localStorage.getItem('token');\r\n        if (token) {\r\n            localStorage.setItem('token', token);\r\n        }\r\n        dispatch(setToken(token));\r\n    };\r\n};\r\n\n\n//# sourceURL=webpack://react-training/./src/store/token/actions.ts?");
 
 /***/ }),
 
@@ -4380,7 +4380,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("cf836d72555cd1b04d7b")
+/******/ 		__webpack_require__.h = () => ("7f779742ac32db9cc4a0")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
