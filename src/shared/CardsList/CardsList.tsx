@@ -22,13 +22,15 @@ export function CardsList() {
   const [loading, setLoading] = useState(true);
   const [errorLoading, setErrorLoading] = useState('');
   const [nextAfter, setNextAfter] = useState('');
+  const [firstLoading, setFirstLoading] = useState(true);
   const [loadingsCount, setLoadingsCount] = useState(0);
 
   const bottomOfList = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     async function load() {
-      if (!nextAfter && loadingsCount > 0) return;
+      if (!nextAfter && !firstLoading) return;
+
       setLoading(true);
       setErrorLoading('');
 
@@ -68,6 +70,7 @@ export function CardsList() {
         setNextAfter(after);
 
         setLoadingsCount(loadingsCount + 1);
+        setFirstLoading(false);
       } catch (error) {
         setErrorLoading(String(error));
       }
