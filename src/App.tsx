@@ -51,15 +51,12 @@ function AppComponent() {
 
               <Content>
                 <Switch>
-                  <Route path="/posts/">
-                    <CardsList />
+                  <Route path="/posts/" component={CardsList}>
 
-                    <Route path="/posts/:id">
-                      <Post />
-                    </Route>
+                    <Route path="/posts/:id" component={Post} />
                   </Route>
 
-                  <Route path="/*">
+                  <Route path="/">
                     <Page404 />
                   </Route>
                 </Switch>
