@@ -1,0 +1,164 @@
+.form {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 10px;
+  padding: 22px 20px;
+  border-bottom: 1px solid var(--grayF4);
+}
+
+.input {
+  flex-grow: 1;
+  height: 50px;
+  border: 1px solid #d9d9d9;
+  padding: 5px 16px;
+  box-sizing: border-box;
+  border-radius: 3px 3px 0px 0px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #999999;
+  resize: none;
+}
+
+.input[aria-invalid] {
+  border-color: red;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.buttonPluse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 999px;
+  width: 20px;
+  height: 20px;
+  background: #cc6633;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.controlsButtons {
+  display: none;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  flex-grow: 1;
+  padding: 13px 15px;
+  background: var(--grayE5);
+}
+
+.controlsButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+}
+
+.buttonEmoji {
+  flex-shrink: 0;
+  border-radius: 999px;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.buttonSubmit {
+  flex-shrink: 0;
+  border-radius: 999px;
+  width: 20px;
+  height: 20px;
+  background: #cc6633;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.buttonSubmit:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.buttonText {
+  display: none;
+}
+
+.buttonArrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 1024px) {
+  .form {
+    gap: 0;
+    padding: 0;
+    border-bottom: none;
+  }
+
+  .buttonPluse {
+    display: none;
+  }
+
+  .input {
+    padding: 16px;
+    height: 89px;
+    width: 100%;
+  }
+
+  .controls {
+    display: flex;
+    align-items: unset;
+    gap: 0;
+    flex-grow: 1;
+    border-radius: 0 0 3px 3px;
+  }
+
+  .controlsButtons {
+    display: flex;
+  }
+
+  .buttonEmoji {
+    display: none;
+  }
+
+  .buttonSubmit {
+    padding: 17px 50px;
+    border-radius: 0;
+    width: 220px;
+    height: unset;
+  }
+
+  .buttonText {
+    display: inline-block;
+  }
+
+  .buttonArrow {
+    display: none;
+  }
+}

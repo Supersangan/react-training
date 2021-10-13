@@ -1,0 +1,18 @@
+.root {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--gray99);
+}
+
+.icon * {
+  fill: var(--grayC4);
+}
+
+@media (min-width: 1024px) {
+  .icon * {
+    fill: var(--gray99);
+  }
+}

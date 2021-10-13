@@ -1,31 +1,71 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './main.global.css';
 import { hot } from 'react-hot-loader/root';
 import { Header } from './shared/Header';
 import { Content } from './shared/Content';
 import { Layout } from './shared/Layout';
 import { CardsList } from './shared/CardsList';
-import { useToken } from './hooks/useToken';
-import { tokenContext } from './shared/context/tokenContext';
 import { UserContextProvider } from './shared/context/userContext';
-import { PostsContextProvider } from './shared/context/postsContext';
+import { applyMiddleware, createStore } from 'redux';
+import { Provider } from 'react-redux';
+import { composeWithDevTools } from 'redux-devtools-extension';
+import { rootReducer } from './store/reducer';
+import { Token } from './shared/Token';
+import thunk from 'redux-thunk';
+import {
+  BrowserRouter,
+  Redirect,
+  Route,
+  StaticRouter,
+  Switch,
+} from 'react-router-dom';
+import { Post } from './shared/Post';
+import { Page404 } from './shared/Page404';
+
+const store = createStore(
+  rootReducer,
+  composeWithDevTools(applyMiddleware(thunk))
+);
 
 function AppComponent() {
-  const [token] = useToken();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   return (
-    <tokenContext.Provider value={token}>
-      <UserContextProvider>
-        <PostsContextProvider>
-          <Layout>
-            <Header />
-            <Content>
-              <CardsList />
-            </Content>
-          </Layout>
-        </PostsContextProvider>
-      </UserContextProvider>
-    </tokenContext.Provider>
+    <Provider store={store}>
+      {mounted && (
+        <BrowserRouter>
+          <Switch>
+            <Redirect exact from="/" to="/posts/" />
+            <Redirect from="/auth" to="/posts/" />
+          </Switch>
+
+          <Token />
+
+          <UserContextProvider>
+            <Layout>
+              <Header />
+
+              <Content>
+                <Switch>
+                  <Route path="/posts/" component={CardsList}>
+
+                    <Route path="/posts/:id" component={Post} />
+                  </Route>
+
+                  <Route path="/">
+                    <Page404 />
+                  </Route>
+                </Switch>
+              </Content>
+            </Layout>
+          </UserContextProvider>
+        </BrowserRouter>
+      )}
+    </Provider>
   );
 }
 

@@ -1,0 +1,129 @@
+.root {
+  display: flex;
+  gap: 10px;
+}
+
+.root + .root,
+.controls + .root {
+  margin-top: 30px;
+}
+
+.aside {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.asideKarmaCounter {
+  display: none;
+}
+
+.indent{
+  flex-grow: 1;
+  width: 2px;
+  background: var(--grayD9);
+}
+
+.header {
+  margin-bottom: 8px;
+}
+
+.text {
+  margin-bottom: 7px;
+  font-size: 12px;
+  line-height: 22px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.actions {
+  display: flex;
+  gap: 15px;
+}
+
+.actionsButton {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.actionsIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 999px;
+  background: var(--grayC4);
+  width: 20px;
+  height: 20px;
+}
+
+.actionsIcon * {
+  fill: var(--white);
+}
+
+.actionsIconShare {
+  display: block;
+  padding: 5px 7px 5px 5px;
+}
+
+.actionsIconReport {
+  display: block;
+  padding: 4px 4px 6px 4px;
+}
+
+.actionsLabel {
+  display: none;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--gray99);
+}
+
+@media (min-width: 1024px) {
+  .asideKarmaCounter {
+    display: block;
+  }
+
+  .controls {
+    justify-content: start;
+    gap: 27px;
+  }
+
+  .controlsKarmaCounter {
+    display: none;
+  }
+
+  .actions {
+    gap: 27px;
+  }
+
+  .actionsIcon {
+    background: transparent;
+    width: unset;
+    height: unset;
+  }
+
+  .actionsIconShare {
+    padding: 0;
+    width: 12px;
+    height: 14px;
+  }
+
+  .actionsIconReport {
+    padding: 0;
+    width: 16px;
+    height: 14px;
+  }
+
+  .actionsIcon * {
+    fill: var(--gray99);
+  }
+
+  .actionsLabel {
+    display: inline-block;
+  }
+}

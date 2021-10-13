@@ -1,0 +1,56 @@
+.root {
+  display: flex;
+  align-items: center;
+}
+
+.karmaValue {
+  padding: 0 4px;
+  font-size: 12px;
+  color: var(--grayC4);
+}
+
+.sRow {
+  flex-direction: row;
+  gap: 3px;
+}
+
+.sColumn {
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 1023px) {
+  .mRow {
+    flex-direction: row;
+    gap: 3px;
+  }
+
+  .mColumn {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1539px) {
+  .tRow {
+    flex-direction: row;
+    gap: 3px;
+  }
+
+  .tColumn {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 1540px) {
+  .dRow {
+    flex-direction: row;
+    gap: 3px;
+  }
+
+  .dColumn {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

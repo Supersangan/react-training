@@ -1,5 +1,5 @@
-import React from "react";
-import { useUserData } from "../../hooks/useUserData";
+import React from 'react';
+import { useUserData } from '../../hooks/useUserData';
 
 export interface IUserContextData {
   name?: string;
@@ -8,12 +8,12 @@ export interface IUserContextData {
 
 export const userContext = React.createContext<IUserContextData>({});
 
-export function UserContextProvider({children}: {children: React.ReactNode}) {
-  const [data] = useUserData();
+export function UserContextProvider({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  const { data } = useUserData();
 
-  return (
-    <userContext.Provider value={data}>
-      {children}
-    </userContext.Provider>
-  );
+  return <userContext.Provider value={data}>{children}</userContext.Provider>;
 }
