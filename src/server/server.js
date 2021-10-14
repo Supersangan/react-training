@@ -4,7 +4,7 @@ import ReactDom from 'react-dom/server';
 import {App} from '../App';
 import {indexHtmlTemplate} from './indexHtmlTemplate';
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3000;
 const app = express();
 
 app.use('/static', express.static('./dist/client'));
