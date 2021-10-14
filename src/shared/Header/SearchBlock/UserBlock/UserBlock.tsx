@@ -4,6 +4,8 @@ import { IconAnon } from '../../../icons';
 import { EColors, InlineText } from '../../../InlineText';
 import styles from './userblock.css';
 
+const HOMEPAGE = process.env.HOME;
+
 interface IUserBlockProps {
   avatarSrc?: string;
   username?: string;
@@ -16,7 +18,7 @@ export function UserBlock({ avatarSrc, username, loading }: IUserBlockProps) {
   return (
     <a
       className={styles.root}
-      href={`https://www.reddit.com/api/v1/authorize?client_id=${client_id}&response_type=code&state=random_string&redirect_uri=http://localhost:3000/auth&duration=permanent&scope=read identity submit`}
+      href={`https://www.reddit.com/api/v1/authorize?client_id=${client_id}&response_type=code&state=random_string&redirect_uri=${HOMEPAGE}/auth&duration=permanent&scope=read identity submit`}
     >
       <div className={styles.avatarBox}>
         {avatarSrc ? (
