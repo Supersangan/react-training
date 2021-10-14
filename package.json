@@ -8,7 +8,8 @@
     "build:prod": "cross-env NODE_ENV=production webpack --config webpack.config.js",
     "dev": "cross-env NODE_ENV=development CLIENT_ID=3pr6xGqci--_mOnIpz9ubA node ./bin/dev.js",
     "prod": "cross-env NODE_ENV=production node ./bin/dev.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./bin/dev.js"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,20 @@
     "url": "https://github.com/Supersangan/react-training/issues"
   },
   "homepage": "https://github.com/Supersangan/react-training#readme",
-  "devDependencies": {
+  "dependencies": {
+    "@types/react-router-dom": "^5.3.1",
+    "axios": "^0.21.4",
+    "classnames": "^2.3.1",
+    "cross-env": "^7.0.3",
+    "express": "^4.17.1",
+    "formik": "^2.2.9",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.5",
+    "react-router-dom": "^5.3.0",
+    "redux": "^4.1.1",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.3.0",
     "@hot-loader/react-dom": "^17.0.1",
     "@types/classnames": "^2.3.1",
     "@types/enzyme": "^3.10.9",
@@ -52,20 +66,5 @@
     "webpack-dev-server": "^4.3.0",
     "webpack-hot-middleware": "^2.25.0",
     "webpack-node-externals": "^2.5.2"
-  },
-  "dependencies": {
-    "@types/react-router-dom": "^5.3.1",
-    "axios": "^0.21.4",
-    "classnames": "^2.3.1",
-    "cross-env": "^7.0.3",
-    "express": "^4.17.1",
-    "formik": "^2.2.9",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-redux": "^7.2.5",
-    "react-router-dom": "^5.3.0",
-    "redux": "^4.1.1",
-    "redux-devtools-extension": "^2.13.9",
-    "redux-thunk": "^2.3.0"
   }
 }
