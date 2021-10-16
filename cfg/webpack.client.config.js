@@ -12,7 +12,13 @@ const DEV_PLUGINS = [
   new HotModuleReplacementPlugin(),
 ];
 
-const COMMON_PLUGINS = [new DefinePlugin({'process.env.CLIENT_ID': `'${process.env.CLIENT_ID}'`})];
+const COMMON_PLUGINS = [
+  new DefinePlugin({
+    'process.env.HOME': `'${process.env.HOME}'`,
+    'process.env.CLIENT_ID': `'${process.env.CLIENT_ID}'`,
+    'process.env.SECRET': `'${process.env.SECRET}'`,
+  })
+];
 
 
 function setupDevtool() {
