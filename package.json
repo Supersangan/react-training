@@ -9,7 +9,7 @@
     "dev": "cross-env NODE_ENV=development HOME=http//localhost:3000 CLIENT_ID=3pr6xGqci--_mOnIpz9ubA SECRET=ohL3NNifgIJ9yKIC98ADygha5KJyRA node ./bin/dev.js",
     "prod": "cross-env NODE_ENV=production HOME=https://sangan-react-training.herokuapp.com CLIENT_ID=3pr6xGqci--_mOnIpz9ubA SECRET=ohL3NNifgIJ9yKIC98ADygha5KJyRA node ./bin/dev.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cross-env NODE_ENV=production HOME=https://sangan-react-training.herokuapp.com CLIENT_ID=YS6TjHm9N-QMd5Qv5_oMOQ SECRET=ikcuo5Lg7abW2bo6AJgPz50HhlK_Ng node ./dist/server/server"
+    "start": "node ./dist/server/server"
   },
   "repository": {
     "type": "git",
