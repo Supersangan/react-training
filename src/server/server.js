@@ -3,17 +3,24 @@ import express from 'express';
 import ReactDom from 'react-dom/server';
 import {App} from '../App';
 import {indexHtmlTemplate} from './indexHtmlTemplate';
+import compression from 'compression';
+import helmet from 'helmet';
 
 const port = process.env.PORT || 3000;
 const homePage = process.env.HOME;
 const clientId = process.env.CLIENT_ID;
 const secret = process.env.SECRET;
+
+const IS_DEV = process.env.NODE_ENV !== 'production';
+
 const app = express();
 
-console.log(
-  'homePage: ',homePage, 
-  'clientId: ',clientId, 
-  'secret: ',secret);
+if (!IS_DEV) {
+  app.use(compression());
+  app.use(helmet({
+    contentSecurityPolicy: false,
+  }));
+}
 
 app.use('/static', express.static('./dist/client'));
 
