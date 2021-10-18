@@ -22,6 +22,8 @@ if (!IS_DEV) {
   }));
 }
 
+console.log('IS_DEV:',IS_DEV);
+
 app.use('/static', express.static('./dist/client'));
 
 app.get('/auth', (req, res) => {
