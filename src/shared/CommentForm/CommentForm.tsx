@@ -1,10 +1,9 @@
+import { createTypedHooks, useStoreState } from 'easy-peasy';
 import { Formik, useFormikContext } from 'formik';
-import React, { ChangeEvent, FormEvent, useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { TRootState, updateComment } from '../../store/reducer';
+import React, { useEffect } from 'react';
+import { IStoreModel } from '../../App';
 import { EIcons, Icon } from '../Icon';
 import styles from './commentform.css';
-
 
 interface ICommentFormValues {
   comment: string;
@@ -12,21 +11,22 @@ interface ICommentFormValues {
 
 function SaveFormStateToRedux() {
   const { values } = useFormikContext<ICommentFormValues>();
-  const dispatch = useDispatch();
+  
+  const typedHooks = createTypedHooks<IStoreModel>();
+  const useStoreActions = typedHooks.useStoreActions;
+  const updateComment = useStoreActions((actions) => actions.updateComment);
 
   useEffect(() => {
-    if(!values) return;
-    
-    dispatch(updateComment(values.comment));
+    if (!values) return;
+    updateComment(values.comment);
     console.log(values.comment);
-    
   }, [values]);
-  
+
   return null;
-};
+}
 
 export function CommentForm() {
-  const commentInitialvalue = useSelector<TRootState, string>((state) => state.commentText);
+  const commentInitialvalue = useStoreState<IStoreModel>((state) => state.comment);
 
   const initialValues: ICommentFormValues = {
     comment: commentInitialvalue,

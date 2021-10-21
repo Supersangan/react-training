@@ -12,20 +12,27 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import { rootReducer } from './store/reducer';
 import { Token } from './shared/Token';
 import thunk from 'redux-thunk';
-import {
-  BrowserRouter,
-  Redirect,
-  Route,
-  StaticRouter,
-  Switch,
-} from 'react-router-dom';
+import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 import { Post } from './shared/Post';
 import { Page404 } from './shared/Page404';
+import { action, Action, createStore as createEasyStore, StoreProvider as EasyStoreProvider } from 'easy-peasy';
 
 const store = createStore(
   rootReducer,
   composeWithDevTools(applyMiddleware(thunk))
 );
+
+export interface IStoreModel {
+  comment: string;
+  updateComment: Action<IStoreModel, string>
+}
+
+export const easyStore = createEasyStore<IStoreModel>({
+  comment: 'Hello from easy-peasy!',
+  updateComment: action((state, payload) => {
+    state.comment = payload;
+  }),
+});
 
 function AppComponent() {
   const [mounted, setMounted] = useState(false);
@@ -35,38 +42,40 @@ function AppComponent() {
   }, []);
 
   return (
-    <Provider store={store}>
-      {mounted && (
-        <BrowserRouter>
-          <Switch>
-            <Redirect exact from="/" to="/posts/" />
-            <Redirect from="/auth" to="/posts/" />
-          </Switch>
+    <EasyStoreProvider store={easyStore}>
+      <Provider store={store}>
+        {mounted && (
+          <BrowserRouter>
+            <Switch>
+              <Redirect exact from="/" to="/posts/" />
+              <Redirect from="/auth" to="/posts/" />
+            </Switch>
 
-          <Token />
+            <Token />
 
-          <UserContextProvider>
-            <Layout>
-              <Header />
+            <UserContextProvider>
+              <Layout>
+                <Header />
 
-              <Content>
-                <Switch>
-                  <Route path="/posts/">
-                    <CardsList />
+                <Content>
+                  <Switch>
+                    <Route path="/posts/">
+                      <CardsList />
 
-                    <Route path="/posts/:id" component={Post} />
-                  </Route>
+                      <Route path="/posts/:id" component={Post} />
+                    </Route>
 
-                  <Route path="/">
-                    <Page404 />
-                  </Route>
-                </Switch>
-              </Content>
-            </Layout>
-          </UserContextProvider>
-        </BrowserRouter>
-      )}
-    </Provider>
+                    <Route path="/">
+                      <Page404 />
+                    </Route>
+                  </Switch>
+                </Content>
+              </Layout>
+            </UserContextProvider>
+          </BrowserRouter>
+        )}
+      </Provider>
+    </EasyStoreProvider>
   );
 }
 
